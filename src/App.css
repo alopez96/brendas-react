@@ -1,0 +1,42 @@
+
+.app{
+    display: flex;
+    font-family: 'nunito', sans-serif;
+}
+
+.hero{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./svg/hero.svg');
+    display: table;
+}
+
+.hero-text{
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 8rem;
+    color: #fff;
+}
+
+.hero-text h2{
+    font-weight: 700;
+    font-size: 60px;
+    width: 25rem;
+    margin-bottom: -0.4rem;
+}
+
+.hero-text p{
+    font-weight: 500;
+    font-size: 30px;
+    width: 25rem;
+}
+
+/* cta */
+.cta-btn{
+    background-color: #F172A1;
+    font-size: 30px;
+    padding: 0.6rem 0.9rem 0.6rem 0.9rem;
+    color: #fff;
+    border-radius: 0.25rem;
+    border: none;
+}
