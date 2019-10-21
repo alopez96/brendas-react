@@ -1,6 +1,7 @@
 import React from 'react';
 import './../App.css';
 import Cta from './Cta';
+import jumpie from './../svg/jumpie.svg';
 
 function Hero() {
 
@@ -14,6 +15,7 @@ function Hero() {
           <p>{subHeader}</p>
           <Cta/>
         </div>
+        <img className="hero-jumpie" src={jumpie}></img>
       </div>
     );
   

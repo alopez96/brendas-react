@@ -31,7 +31,6 @@
     width: 25rem;
 }
 
-/* cta */
 .cta-btn{
     background-color: #F172A1;
     font-size: 30px;
@@ -39,4 +38,8 @@
     color: #fff;
     border-radius: 0.25rem;
     border: none;
+}
+
+.hero-jumpie{
+    margin-top: 3rem;
 }
