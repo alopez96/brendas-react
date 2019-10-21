@@ -43,3 +43,14 @@
 .hero-jumpie{
     margin-top: 3rem;
 }
+
+
+.lang-btn{
+    width: 5rem;
+    background-color: #D9C3CB;
+    border: none;
+    font-family: 'nunito' sans-serif;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+}

@@ -1,7 +1,8 @@
 import React from 'react';
-import './../App.css';
+import './../../App.css';
+import jumpie from './../../svg/jumpie.svg';
 import Cta from './Cta';
-import jumpie from './../svg/jumpie.svg';
+import Nav from './Nav';
 
 function Hero() {
 
@@ -10,6 +11,7 @@ function Hero() {
 
     return (
       <div className='hero'>
+        <Nav/>
         <div className='hero-text'>
           <h2>{header}</h2>
           <p>{subHeader}</p>
