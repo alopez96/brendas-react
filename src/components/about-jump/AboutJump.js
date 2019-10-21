@@ -1,5 +1,6 @@
 import React from 'react';
 import jumpie from './../../svg/jumpieblue.svg';
+import './main.css';
 
 function AboutJump () {
 
@@ -18,14 +19,14 @@ function AboutJump () {
         <div>
             <div className="main">
                 <div>
-                    <img src={jumpie}></img>
+                    <img className='image' src={jumpie}></img>
                 </div>
-                <div>
-                    <h3>{header}</h3>
-                    <p>{subheader}</p>
-                    <div>
-                        <a onClick={() => seeJumpies()}>See junmpies ></a>
-                        <a onClick={() => call()}>Give us a call ></a>
+                <div className='content'>
+                    <h3 className='head'>{header}</h3>
+                    <p className='subhead'>{subheader}</p>
+                    <div className='buttons'>
+                        <a className='primary' onClick={() => seeJumpies()}>See jumpies ></a>
+                        <a className='secondary' onClick={() => call()}>Give us a call ></a>
                     </div>
                 </div>
 
