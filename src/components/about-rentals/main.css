@@ -8,15 +8,6 @@
     align-items: center;
 }
 
-
-.primary{
-    align-self: flex-end;
-    color: #F172A1;
-    font-weight: 600;
-    font-size: 1.4em;
-}
-
-
 .content{
     margin-left: 3em;
     color: #505050;
@@ -30,6 +21,13 @@
 .subhead{
     font-size: 1.2em;
     width: 45vw;
+}
+
+.primary{
+    align-self: flex-end;
+    color: #F172A1;
+    font-weight: 600;
+    font-size: 1.4em;
 }
 
 .image{
