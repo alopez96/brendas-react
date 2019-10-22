@@ -1,4 +1,5 @@
 import React from 'react';
+import './main.css';
 
 function Icon (data) {
 
@@ -6,14 +7,25 @@ function Icon (data) {
 
     return(
         <div>
-            {/* image */}
-            <a href={ref.link} alt={ref.alt}>
-                <img src={ref.image}/>
-            </a>
-            {/* link */}
-            <a href={ref.link}>
-                {ref.text}
-            </a>
+            {ref.cta === 'primary' ?   
+            <div className='contain primary'>
+                <a href={ref.link} alt={ref.alt}>
+                    <img src={ref.image}/>
+                </a>
+                <a href={ref.link} className='data-text'>
+                    {ref.text}
+                </a>
+            </div>     
+            :
+            <div  className='contain'>
+                <a href={ref.link} alt={ref.alt}>
+                    <img src={ref.image}/>
+                </a>
+                <a href={ref.link} className='data-text'>
+                    {ref.text}
+                </a>
+            </div>
+            }
         </div>
     )
 }

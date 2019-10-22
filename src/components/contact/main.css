@@ -9,6 +9,26 @@
     color: #505050;
 }
 
-.content{
-    
+.head{
+    font-size: 3em;
+    font-weight: 300;
+}
+
+.subhead{
+    font-size: 1.2em;
+    margin-top: -0.5em;
+    margin-bottom: 2em;
+}
+
+/* Icon.js */
+.contain{
+    align-items: center;
+    display: flex;
+}
+
+.data-text{
+    color: #505050;
+    text-decoration: none;
+    font-size: 2em;
+    margin-left: 2em;
 }
