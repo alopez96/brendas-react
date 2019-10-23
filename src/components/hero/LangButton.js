@@ -4,7 +4,7 @@ import './../../App.css';
 function LangButton () {
 
     const [isengl, setisEngl] = useState(true);
-    const [lang, setLang] = useState('English');
+    const [lang, setLang] = useState('Espanol');
 
     const toggleLang = (isengl) => {
         if(isengl){

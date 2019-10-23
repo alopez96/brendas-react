@@ -5,17 +5,20 @@ function Cta (props) {
   
     const ctatext = 'See rentals';
     
-
     const isMobile = props.isMobile;
+
+    const handleCta = () => {
+        console.log('cta')
+    }
 
     if(!isMobile){
         return (
-            <button className='cta-btn'>{ctatext}</button>
+            <button onClick={() => handleCta()} className='cta-btn'>{ctatext}</button>
         );
     }
     else{
         return(
-            <button className='mcta-btn'>{ctatext}</button>
+            <button onClick={() => handleCta()} className='mcta-btn'>{ctatext}</button>
         )
     }
 }

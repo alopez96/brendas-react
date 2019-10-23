@@ -15,6 +15,7 @@ function Hero(props) {
   if(!isMobile){
       return (
         <div className='hero'>
+          <Nav/>
           <div className='hero-text'>
             <h2>{header}</h2>
             <p>{subHeader}</p>

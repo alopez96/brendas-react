@@ -37,10 +37,11 @@ function App() {
     setisMobile( width < 500 )
   }
 
-
   return (
     <div className='app'>
       <Hero isMobile={isMobile}/>
+      <div className='padding'></div>
+      <AboutJump/>
     </div>
   );
 }
