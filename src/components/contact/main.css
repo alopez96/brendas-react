@@ -29,6 +29,29 @@
 .data-text{
     color: #505050;
     text-decoration: none;
-    font-size: 2em;
+    font-size: 1.6em;
     margin-left: 2em;
 }
+
+/* ipads */
+@media only screen and (max-width: 767px) {
+    .data-text {
+        font-size: 0.5em;
+        text-align: center;
+        margin: 0px;
+    }
+}
+
+/* phones */
+@media only screen and (max-width: 480px) {
+    .head{
+        font-size: 2em;
+        font-weight: 600;
+    }
+    .data-text {
+      font-size: 1em;
+      text-align: center;
+      margin-left: 0.5em;
+    }
+}
+
