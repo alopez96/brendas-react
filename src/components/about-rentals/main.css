@@ -35,6 +35,40 @@
 }
 
 
+
+.mmain{
+    display: flex;
+    flex-direction: column;
+    background-color: #F7F7F7;
+    width: 98vw;
+    height: 97vh;
+    margin: 1em;
+    justify-content: center;
+    align-items: center;
+    color: #505050;
+}
+
+.mhead{
+    font-size: 2em;
+    width: 70vw;
+}
+
+.msubhead{
+    font-size: 1.2em;
+    width: 70vw;
+}
+
+.mprimary{
+    color: #F172A1;
+    font-weight: 900;
+    font-size: 1.4em;
+}
+
+.mimage{
+    width: 70vw;
+}
+
+
 /* ipads */
 @media only screen and (max-width: 767px) {
 

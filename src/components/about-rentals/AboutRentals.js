@@ -9,7 +9,7 @@ function AboutRentals (props) {
     const subheader = 'Tell us how many of each, and let us deliver and pickup to your location.';
 
     const call = () => {
-        console.log('call clicked')
+        window.open('tel: 707-921-6530')
     }
 
     const isMobile = props.isMobile
@@ -30,9 +30,12 @@ function AboutRentals (props) {
     }
     else{
         return(
-            <div>
-                <div className=''>
-                    <img src={tent}/>
+            <div className='mmain'>
+                <img className='mimage' src={tent}/>
+                <div className='mcontent'>
+                    <h3 className='mhead'>{header}</h3>
+                    <p className='msubhead'>{subheader}</p>   
+                    <a className='mprimary' onClick={() => call()}>Give us a call ></a> 
                 </div>
             </div>
         );
