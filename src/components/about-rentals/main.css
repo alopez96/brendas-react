@@ -31,5 +31,38 @@
 }
 
 .image{
-    width:47vw;
+    width: 47vw;
+}
+
+
+/* ipads */
+@media only screen and (max-width: 767px) {
+
+}
+
+/* phones */
+@media only screen and (max-width: 480px) {
+    .main{
+        width: 0vw;
+        height: 0vh;
+        margin: 0em;
+    }
+
+    .content{
+        margin-left: 0em;
+    }
+    
+    .head{
+        font-size: 2em;
+        width: 4vw;
+    }
+    
+    .subhead{
+        font-size: 1em;
+        width: 45vw;
+    }
+    
+    .image{
+        width: 40vw;
+    }
 }
