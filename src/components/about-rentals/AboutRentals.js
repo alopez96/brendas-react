@@ -4,8 +4,8 @@ import './main.css';
 
 function AboutRentals () {
 
-    const [width, setWidth] = useState(0);
-    const [isMobile, setisMobile] = useState(false);
+    const [width, setWidth] = useState(window.innerWidth);
+    const [isMobile, setisMobile] = useState(window.innerWidth < 500);
 
     //like component did mount
     useEffect(() => {
@@ -13,14 +13,14 @@ function AboutRentals () {
 
         //returned function will be called on component unmount 
         return () => {
-            window.removeEventListener('resize', () => { })
+            window.removeEventListener('resize', () => {updateWidth() })
         }
     }, []);
 
     //handle change in width
     useEffect(() => {
         handleWidthChange();
-    }, [width, isMobile]);
+    }, [width]);
 
     const header = 'Need tables, chairs, or tents?';
     const subheader = 'Tell us how many of each, and let us deliver and pickup to your location.';
@@ -35,12 +35,10 @@ function AboutRentals () {
 
     //method to update isMobile bool
     const handleWidthChange = () => {
-        console.log('width', width)
-        console.log('isMobile', width < 500)        
         setisMobile( width < 500 )
     }
 
-    if(isMobile){
+    if(!isMobile){
         return(
             <div>
                 <div className='main'>
