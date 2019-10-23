@@ -8,27 +8,28 @@
     width: 100vw;
     height: 100vh;
     background-image: url('./svg/hero.svg');
-    display: table;
+    display: flex;
+    align-items: center;
 }
 
 .hero-text{
-    display: table-cell;
-    vertical-align: middle;
     padding-left: 8rem;
     color: #fff;
 }
 
 .hero-text h2{
     font-weight: 700;
-    font-size: 60px;
-    width: 25rem;
+    font-size: 3.5em;
+    width: 40vw;
     margin-bottom: -0.4rem;
+    justify-self: center;
+    align-self: center;
 }
 
 .hero-text p{
     font-weight: 500;
-    font-size: 30px;
-    width: 25rem;
+    font-size: 2em;
+    width: 40vw;
 }
 
 .cta-btn{
@@ -40,11 +41,6 @@
     border: none;
 }
 
-.hero-jumpie{
-    margin-top: 3rem;
-}
-
-
 .lang-btn{
     width: 5rem;
     background-color: #D9C3CB;
@@ -53,4 +49,56 @@
     color: #fff;
     font-size: 1rem;
     border-radius: 5px;
+}
+
+.hero img{
+    margin-left: 2em;
+    margin-top: -5em;
+    width: 40vw;
+}
+
+
+
+/* mobile */
+.mhero{
+    width: 100vw;
+    height: 100vh;
+    background-color: #A1C3D1;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mhero img{
+    margin-top: 7em;
+    height: 25vh;
+    margin-bottom: 1.5em;
+}
+
+.mhero-text{
+    width: 50vw;
+}
+
+.mhero-text h2{
+    font-weight: 600;
+    font-size: 2em;
+    margin-bottom: -0.4rem;
+}
+
+.mhero-text p{
+    font-weight: 400;
+    font-size: 1.6em;
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+}
+
+.mcta-btn{
+    background-color: #F172A1;
+    font-size: 1.5em;
+    padding: 0.6rem 0.9rem 0.6rem 0.9rem;
+    color: #fff;
+    border-radius: 0.25rem;
+    border: none;
+    width: 50vw;
 }

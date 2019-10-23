@@ -17,6 +17,7 @@ function AboutJump (props) {
     }
 
     const isMobile = props.isMobile;
+    console.log('ismobile', isMobile)
 
     if(!isMobile){
         return(

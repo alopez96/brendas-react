@@ -40,7 +40,7 @@ function App() {
 
   return (
     <div className='app'>
-      <AboutJump isMobile={isMobile}/>
+      <Hero isMobile={isMobile}/>
     </div>
   );
 }
