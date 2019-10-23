@@ -9,8 +9,8 @@ function Icon (data) {
         <div>
             {ref.cta === 'primary' ?   
             <div className='contain primary'>
-                <a href={ref.link} alt={ref.alt}>
-                    <img src={ref.image}/>
+                <a href={ref.link}>
+                    <img src={ref.image} alt={ref.alt}/>
                 </a>
                 <a href={ref.link} className='data-text'>
                     {ref.text}
@@ -19,7 +19,7 @@ function Icon (data) {
             :
             <div  className='contain'>
                 <a href={ref.link} alt={ref.alt}>
-                    <img src={ref.image}/>
+                    <img src={ref.image} alt={ref.alt}/>
                 </a>
                 <a href={ref.link} className='data-text'>
                     {ref.text}

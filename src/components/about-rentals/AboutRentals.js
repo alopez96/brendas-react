@@ -1,7 +1,7 @@
 import React from 'react';
 import rental from './../../svg/rentals.svg';
-import './main.css';
-import tent from './../../svg/tablesandtent.svg';
+import './rentals.css';
+import tent from './../../svg/mobileSizes/rentals.svg';
 
 function AboutRentals (props) {
 
@@ -20,10 +20,10 @@ function AboutRentals (props) {
                 <div className='content'>
                     <h3 className='head'>{header}</h3>
                     <p className='subhead'>{subheader}</p>    
-                    <a className='primary' onClick={() => call()}>Give us a call ></a>
+                    <button className='primary' onClick={() => call()}>Give us a call ></button>
                 </div>
                 <div>
-                    <img className='image' src={rental}></img>
+                    <img className='image' src={rental} alt='tent'/>
                 </div>
             </div>
         );
@@ -31,11 +31,11 @@ function AboutRentals (props) {
     else{
         return(
             <div className='mmain'>
-                <img className='mimage' src={tent}/>
+                <img className='mimage' src={tent} alt='tent'/>
                 <div className='mcontent'>
                     <h3 className='mhead'>{header}</h3>
                     <p className='msubhead'>{subheader}</p>   
-                    <a className='mprimary' onClick={() => call()}>Give us a call ></a> 
+                    <button className='mprimary' onClick={() => call()}>Give us a call ></button>
                 </div>
             </div>
         );

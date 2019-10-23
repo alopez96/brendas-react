@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import LangButton from './LangButton';
 
 function Nav () {

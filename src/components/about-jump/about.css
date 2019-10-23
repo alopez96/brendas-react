@@ -16,15 +16,20 @@
 }
 
 .primary{
+    align-self: flex-end;
     color: #F172A1;
     font-weight: 600;
     font-size: 1.4em;
+    background-color: transparent;
+    border: none;
 }
 
 .secondary{
     color: #505050;
     font-weight: 600;
     font-size: 1.4em;
+    background-color: transparent;
+    border: none;
 }
 
 .content{
@@ -40,4 +45,11 @@
 .subhead{
     font-size: 1.2em;
     width: 45vw;
+}
+
+.msecondary{
+    color: #505050;
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-left: 1em;
 }

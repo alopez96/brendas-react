@@ -17,7 +17,7 @@ function Hero() {
           <p>{subHeader}</p>
           <Cta/>
         </div>
-        <img className="hero-jumpie" src={jumpie}></img>
+        <img className="hero-jumpie" src={jumpie} alt='jumpie'></img>
       </div>
     );
   
