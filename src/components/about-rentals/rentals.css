@@ -1,6 +1,6 @@
 
 .image{
-    width: 47vw;
+    width: 30vw;
 }
 
 /* mobile classes */
@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: column;
     background-color: #F7F7F7;
-    width: 98vw;
+    width: 90vw;
     height: 97vh;
     margin: 1em;
     justify-content: center;
@@ -45,12 +45,6 @@
 
 /* phones */
 @media only screen and (max-width: 480px) {
-    .main{
-        width: 0vw;
-        height: 0vh;
-        margin: 0em;
-    }
-
     .content{
         margin-left: 0em;
     }

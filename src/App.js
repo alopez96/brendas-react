@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
+import Nav from './components/hero/Nav';
 import Hero from './components/hero/Hero';
 import AboutJump from './components/about-jump/AboutJump';
 import AboutRentals from './components/about-rentals/AboutRentals';
@@ -10,6 +11,10 @@ function App() {
 
   const [width, setWidth] = useState(window.innerWidth);
   const [isMobile, setisMobile] = useState(window.innerWidth < 500);
+
+  let homeRef = React.createRef();
+  let aboutRef = React.createRef();
+  let contactRef = React.createRef();
 
   //like component did mount
   useEffect(() => {
@@ -37,11 +42,20 @@ function App() {
     setisMobile( width < 500 )
   }
 
+  const goToRef = (ref) =>{
+    window.scrollTo(0, ref.current.offsetTop)
+  }
+
   return (
     <div className='app'>
-      <Hero isMobile={isMobile}/>
-      <div className='padding'></div>
-      <AboutJump/>
+      <Nav goToRef={goToRef} homeRef={homeRef}
+          aboutRef={aboutRef} contactRef={contactRef} />
+      <div ref={homeRef}> <Hero isMobile={isMobile}/> </div>
+      <div ref={aboutRef}> 
+        <AboutJump isMobile={isMobile}/> 
+        <AboutRentals isMobile={isMobile}/> 
+      </div>
+      <div ref={contactRef}> <Contact isMobile={isMobile}/> </div>
     </div>
   );
 }

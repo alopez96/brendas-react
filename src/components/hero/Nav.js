@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import LangButton from './LangButton';
+import './nav.css';
 
-function Nav () {
+function Nav ({ goToRef, homeRef, aboutRef, contactRef }) {
 
-    const [yindex, setyindex] = useState(0);
+    const [yindex, setyindex] = useState(window.pageYOffset);
 
     //like component did mount
   useEffect(() => {
@@ -11,23 +12,19 @@ function Nav () {
 
     //returned function will be called on component unmount 
     return () => {
-        window.removeEventListener('scroll', () => { updatePosition() })
+        window.removeEventListener('scroll', () => { })
     }
   }, []);
 
-  const updatePosition = () => {
-    setyindex(window.pageYOffset);
-  }
-
-  console.log('y', yindex)
+  const updatePosition = () => setyindex(window.pageYOffset);
 
   if(yindex < 100){
     return (
       <div>  
-          <ul style={listStyle}>
-              <li style={listItem}>Home</li>
-              <li style={listItem}>Rentals</li>
-              <li style={listItem}>Contact</li>
+          <ul style={listStyle} className='list'>
+              <li onClick={()=>goToRef(homeRef)} style={listItem}>Home</li>
+              <li onClick={()=>goToRef(aboutRef)} style={listItem}>Rentals</li>
+              <li onClick={()=>goToRef(contactRef)} style={listItem}>Contact</li>
               <li style={listItem}> 
                 <LangButton/>
             </li>
@@ -37,10 +34,10 @@ function Nav () {
   }
   else{
       return(
-        <ul style={listStyle2}>
-            <li style={listItem2}>Home</li>
-            <li style={listItem2}>Rentals</li>
-            <li style={listItem2}>Contact</li>
+        <ul style={listStyle2} className='list'>
+            <li onClick={()=>goToRef(homeRef)} style={listItem2}>Home</li>
+            <li onClick={()=>goToRef(aboutRef)} style={listItem2}>Rentals</li>
+              <li onClick={()=>goToRef(contactRef)} style={listItem2}>Contact</li>
             <li style={listItem2}> 
               <LangButton/>
           </li>
@@ -53,7 +50,7 @@ const listStyle = {
     display: 'inline',
     position: 'fixed',
     top: '1rem',
-    right: '3rem'
+    right: '3rem' 
 };
 
 const listItem = {
@@ -62,7 +59,8 @@ const listItem = {
     marginRight: '2rem',
     fontFamily: 'Nunito',
     fontWeight: '500',
-    color: '#fff'
+    color: '#fff',
+    fontSize: '1.2em'
 };
 
 const listStyle2 = {
@@ -86,6 +84,10 @@ const listItem2 = {
     fontSize: '1.2em',
 };
 
+const btn = {
+  backgroundColor: 'transparent',
+  border: 'none'
+}
 
 
 export default Nav;

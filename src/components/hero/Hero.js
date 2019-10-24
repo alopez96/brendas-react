@@ -3,7 +3,6 @@ import './../../App.css';
 import jumpie from './../../svg/jumpie.svg';
 import smallJumpie from './../../svg/mobileSizes/jumpie.svg';
 import Cta from './Cta';
-import Nav from './Nav';
 
 function Hero(props) {
 
@@ -15,7 +14,6 @@ function Hero(props) {
   if(!isMobile){
       return (
         <div className='hero'>
-          <Nav/>
           <div className='hero-text'>
             <h2>{header}</h2>
             <p>{subHeader}</p>
