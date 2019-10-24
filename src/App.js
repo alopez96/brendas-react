@@ -6,6 +6,7 @@ import Hero from './components/hero/Hero';
 import AboutJump from './components/about-jump/AboutJump';
 import AboutRentals from './components/about-rentals/AboutRentals';
 import Contact from './components/contact/Contact';
+import Footer from './components/footer/Footer';
 
 function App() {
 
@@ -56,6 +57,7 @@ function App() {
         <AboutRentals isMobile={isMobile}/> 
       </div> */}
       <div ref={contactRef}> <Contact isMobile={isMobile}/> </div>
+      <Footer/>
     </div>
   );
 }
