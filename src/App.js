@@ -48,13 +48,13 @@ function App() {
 
   return (
     <div className='app'>
-      <Nav goToRef={goToRef} homeRef={homeRef}
+      {/* <Nav goToRef={goToRef} homeRef={homeRef}
           aboutRef={aboutRef} contactRef={contactRef} />
       <div ref={homeRef}> <Hero isMobile={isMobile}/> </div>
       <div ref={aboutRef}> 
         <AboutJump isMobile={isMobile}/> 
         <AboutRentals isMobile={isMobile}/> 
-      </div>
+      </div> */}
       <div ref={contactRef}> <Contact isMobile={isMobile}/> </div>
     </div>
   );

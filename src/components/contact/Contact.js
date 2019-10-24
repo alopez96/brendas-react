@@ -6,10 +6,13 @@ import mail from './icons/mail.svg';
 import Icon from './Icon';
 
 
-function Contact () {
+function Contact ({isMobile}) {
 
     const message = 'Call for a free quote.';
     const subhead = 'We are located in Santa Rosa, CA and can deliver free of charge within the area. Ask for Anabel or Isidro.';
+    const text1 = 'We are located in Santa Rosa';
+    const text2 = 'We can drive free of charge within the area.';
+    const text3 = 'When contacting us, ask for Anabel or Isidro.';
 
     const callData = {
         image: calling,
@@ -35,19 +38,40 @@ function Contact () {
         cta: 'secondary'
     }
 
-    return(
-        <div className='main'>
-            <div className='content'>
-                <p className='head'>{message}</p>
-                <p className='subhead'>{subhead}</p>
-                <div>
-                    <Icon data={callData}/>
-                    <Icon data={faceData}/>
-                    <Icon data={mailData}/>
+    if(!isMobile){
+        return(
+            <div className='main'>
+                <div className='content'>
+                    <p className='head'>{message}</p>
+                    <p className='subhead'>{subhead}</p>
+                    <div>
+                        <Icon data={callData}/>
+                        <Icon data={faceData}/>
+                        <Icon data={mailData}/>
+                    </div>
                 </div>
             </div>
-        </div>
-    )
+        )
+    }
+    else{
+        return(
+            <div className='mmain'>
+                <div className='mcontent'>
+                    <p className='mhead'>{message}</p>
+                        <ul className='msubhead'>
+                            <li style={{marginBottom:'1em'}}>{text1}</li>
+                            <li style={{marginBottom:'1em'}}>{text2}</li>
+                            <li style={{marginBottom:'2em'}}>{text3}</li>
+                        </ul>
+                    <div>
+                        <Icon data={callData}/>
+                        <Icon data={faceData}/>
+                        <Icon data={mailData}/>
+                    </div>
+                </div>
+            </div>
+        )
+    }
 }
 
 export default Contact;
