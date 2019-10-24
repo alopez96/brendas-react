@@ -1,11 +1,16 @@
 import React from 'react';
 
-function FooterIcon ({ icon }) {
+function FooterIcon ({ icon, link }) {
+
+    const openLink = (url) => {
+        window.open(url , '_blank');
+    }
 
     return(
-        <div>
+        <button style={{backgroundColor: 'transparent', border:'none'}} 
+                onClick={()=> openLink(link)}>
             <img src={icon}/>
-        </div>
+        </button>
     )
 }
 
