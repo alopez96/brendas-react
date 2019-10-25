@@ -1,0 +1,24 @@
+.background{
+    background-color: #DADADA;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+.items{
+    display: flex;
+}
+
+.jump-card{
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E5E5;
+    width: 15vw;
+    margin: 2em;
+    padding: 1em;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.picture{
+    width: 10vw;
+}
+

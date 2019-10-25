@@ -3,20 +3,19 @@ import jumpie from './../../svg/jumpieblue.svg';
 import jumpieMobile from './../../svg/mobileSizes/jumpieBlue.svg';
 import './about.css';
 
-function AboutJump (props) {
+function AboutJump ({ isMobile, updateRoute }) {
 
     const header = 'Give them the party of their life.';
     const subheader = 'Choose from a variety of jumpies, including Spongebob, Spiderman, Hulk, Frozen, and more.';
 
     const seeJumpies = () => {
-        console.log('see jumpies clicked')
+        updateRoute('list');
     }
 
     const call = () => {
         window.open('tel: 707-921-6530')
     }
 
-    const isMobile = props.isMobile;
 
     if(!isMobile){
         return(
