@@ -4,12 +4,12 @@ import SearchBox from './SearchBox';
 import img1 from './images/b1.jpg';
 import img2 from './images/b2.jpeg';
 
-function Jumpies() {
+function Jumpies({ updateRoute }) {
 
     const [searchfield, setSearchfield] = useState('');
 
     const list = [
-        { name: 'spongebob', image: img1 },
+        { name: 'spongebob', image: img1, },
         { name: 'junior', image: img2 },
         { name: 'spongebob', image: img1 },
         { name: 'junior', image: img2 },
@@ -29,9 +29,14 @@ function Jumpies() {
         return item.name.toLowerCase().includes(searchfield.toLowerCase());
     });
 
+    const goHome = () => {
+        updateRoute('home');
+    }
+
     return(
         <div className='background'>
-            <SearchBox search={updateSearchfield}/>    
+            <SearchBox search={updateSearchfield}/> 
+            <button onClick={()=> goHome()}>home</button>   
             <div className='list'>
                 {filteredItems.map((item,index) => {
                     return(

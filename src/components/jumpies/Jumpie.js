@@ -5,7 +5,7 @@ function Jumpie ( { pic, title }){
 
     return(
         <div className='jump-card'>            
-            <img className='picture' src={pic}/>
+            <img className='picture' src={pic} alt={title}/>
             <label>{title}</label>
         </div>
     )

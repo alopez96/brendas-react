@@ -44,16 +44,19 @@ function App() {
   }
 
   const goToRef = (ref) =>{
-    window.scrollTo(0, ref.current.offsetTop)
+    if(ref.current)
+      window.scrollTo(0, ref.current.offsetTop)
   }
 
   const updateRoute = (value) => {
-      console.log('update route', value);
+      setRoute(value);  
   }
 
   return (
     <div className='app'>
-      {/* <Nav goToRef={goToRef} homeRef={homeRef}
+      {route === 'home' ?
+      <div>
+        <Nav goToRef={goToRef} homeRef={homeRef}
           aboutRef={aboutRef} contactRef={contactRef} />
       <div ref={homeRef}> <Hero isMobile={isMobile}/> </div>
       <div ref={aboutRef}> 
@@ -61,8 +64,10 @@ function App() {
         <AboutRentals isMobile={isMobile}/> 
       </div>
       <div ref={contactRef}> <Contact isMobile={isMobile}/> </div>
-      <Footer/> */}
-      <Jumpies/>
+      <Footer/>
+      </div>
+      : <Jumpies updateRoute={updateRoute}/>
+      }
     </div>
   );
 }
