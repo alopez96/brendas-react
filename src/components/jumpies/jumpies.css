@@ -2,17 +2,27 @@
     background-color: #DADADA;
     min-width: 100vw;
     min-height: 100vh;
-}
-.items{
+    align-items: center;
     display: flex;
+    flex-direction: column;
+}
+.list{
+    display: flex;
+    flex-flow: wrap;
+    overflow-y: scroll;
+    height: 80vh;
+    width: 90vw;
+    border: solid 2px white;
+    justify-content: center;
+
 }
 
 .jump-card{
     display: flex;
     flex-direction: column;
     background-color: #E5E5E5;
-    width: 15vw;
-    margin: 2em;
+    width: 12vw;
+    margin: 1.5em;
     padding: 1em;
     border-radius: 5px;
     align-items: center;
@@ -20,5 +30,23 @@
 
 .picture{
     width: 10vw;
+    margin-bottom: 0.5em;
 }
 
+.search-container{
+    margin: 2em;
+}
+
+.search-container label{
+    font-weight: 500;
+    font-size: 2em;
+    color: #474747;
+}
+
+.search-box{
+    width: 15vw;
+    padding: 1em;
+    border: none;
+    border-radius: 5px;
+    margin-left: 2em;
+}
