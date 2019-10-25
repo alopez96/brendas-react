@@ -21,7 +21,7 @@ function Nav ({ goToRef, homeRef, aboutRef, contactRef }) {
   if(yindex < 100){
     return (
       <div>  
-          <ul style={listStyle} className='list'>
+          <ul style={listStyle} className='nav-list'>
               <li onClick={()=>goToRef(homeRef)} style={listItem}>Home</li>
               <li onClick={()=>goToRef(aboutRef)} style={listItem}>Rentals</li>
               <li onClick={()=>goToRef(contactRef)} style={listItem}>Contact</li>
@@ -34,7 +34,7 @@ function Nav ({ goToRef, homeRef, aboutRef, contactRef }) {
   }
   else{
       return(
-        <ul style={listStyle2} className='list'>
+        <ul style={listStyle2} className='nav-list'>
             <li onClick={()=>goToRef(homeRef)} style={listItem2}>Home</li>
             <li onClick={()=>goToRef(aboutRef)} style={listItem2}>Rentals</li>
               <li onClick={()=>goToRef(contactRef)} style={listItem2}>Contact</li>

@@ -49,6 +49,7 @@ function App() {
   }
 
   const updateRoute = (value) => {
+    console.log('route', value)
       setRoute(value);  
   }
 
@@ -56,18 +57,28 @@ function App() {
     <div className='app'>
       {route === 'home' ?
       <div>
+
         <Nav goToRef={goToRef} homeRef={homeRef}
           aboutRef={aboutRef} contactRef={contactRef} />
-      <div ref={homeRef}> <Hero isMobile={isMobile}/> </div>
+
+      <div ref={homeRef}> 
+        <Hero isMobile={isMobile} updateRoute={updateRoute}/> 
+      </div>
+
       <div ref={aboutRef}> 
         <AboutJump isMobile={isMobile} updateRoute={updateRoute}/> 
         <AboutRentals isMobile={isMobile}/> 
       </div>
-      <div ref={contactRef}> <Contact isMobile={isMobile}/> </div>
-      <Footer/>
+
+      <div ref={contactRef}> 
+        <Contact isMobile={isMobile}/> 
       </div>
-      : <Jumpies updateRoute={updateRoute}/>
-      }
+
+      <Footer/>
+
+      </div>
+
+      : <Jumpies updateRoute={updateRoute}/> }
     </div>
   );
 }

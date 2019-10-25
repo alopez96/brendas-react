@@ -4,12 +4,10 @@ import jumpie from './../../svg/jumpie.svg';
 import smallJumpie from './../../svg/mobileSizes/jumpie.svg';
 import Cta from './Cta';
 
-function Hero(props) {
+function Hero({ isMobile, updateRoute }) {
 
   const header = 'Host an Event to Remember.';
   const subHeader = 'We rent jumpers, tables, chairs, and tents for the ocasion.';
-
-  const isMobile = props.isMobile;
 
   if(!isMobile){
       return (
@@ -17,7 +15,7 @@ function Hero(props) {
           <div className='hero-text'>
             <h2>{header}</h2>
             <p>{subHeader}</p>
-            <Cta/>
+            <Cta updateRoute={updateRoute} isMobile={isMobile}/>
           </div>
           <img src={jumpie} alt='jumpie'></img>
         </div>
@@ -30,7 +28,7 @@ function Hero(props) {
           <div className='mhero-text'>
             <h2>{header}</h2>
             <p>{subHeader}</p>
-            <Cta isMobile={isMobile}/>
+            <Cta updateRoute={updateRoute} isMobile={isMobile}/>
           </div>
         </div>
     )

@@ -1,14 +1,13 @@
 import React from 'react';
 import './../../App.css';
 
-function Cta (props) {
+function Cta ({ isMobile, updateRoute }) {
   
     const ctatext = 'See rentals';
-    
-    const isMobile = props.isMobile;
 
     const handleCta = () => {
-        console.log('cta')
+        console.log('test')
+        updateRoute('list');
     }
 
     if(!isMobile){

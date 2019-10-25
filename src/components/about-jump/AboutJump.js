@@ -28,7 +28,7 @@ function AboutJump ({ isMobile, updateRoute }) {
                         <h3 className='head'>{header}</h3>
                         <p className='subhead'>{subheader}</p>
                         <div className='buttons'>
-                            <button className='primary' onClick={() => seeJumpies()}>See jumpies</button>
+                            <button className='primary' onClick={() => seeJumpies()}>See jumpies ></button>
                             <button className='secondary' onClick={() => call()}>Give us a call ></button>
                         </div>
                     </div>

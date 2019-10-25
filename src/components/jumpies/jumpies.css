@@ -6,15 +6,14 @@
     display: flex;
     flex-direction: column;
 }
-.list{
+.jump-list{
     display: flex;
     flex-flow: wrap;
     overflow-y: scroll;
-    height: 80vh;
+    height: 70vh;
     width: 90vw;
-    
     justify-content: center;
-
+    margin-top: 1em;
 }
 
 .jump-card{
@@ -35,11 +34,13 @@
 
 .search-container{
     margin: 2em;
+    display: flex;
+    flex-direction: column;
 }
 
 .search-container label{
     font-weight: 500;
-    font-size: 2em;
+    font-size: 1em;
     color: #474747;
 }
 
@@ -48,5 +49,35 @@
     padding: 1em;
     border: none;
     border-radius: 5px;
-    margin-left: 2em;
+}
+
+.home-btn{
+    border: none;
+    background: transparent;
+    color: #747474;
+    font-size: 1em;
+    font-weight: 500;
+    width: 8vw;
+    height: 6vh;
+    margin-top: 3em;
+}
+
+.contact-btn{
+    border: none;
+    background: transparent;
+    color: #424242;
+    font-size: 1em;
+    font-weight: 500;
+    background-color: #F172A1;
+    color: white;
+    border-radius: 5px;
+    width: 8vw;
+    height: 6vh;
+    margin-top: 3em;
+}
+
+.jump-top{
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
 }

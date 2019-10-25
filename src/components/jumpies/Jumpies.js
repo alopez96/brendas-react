@@ -8,6 +8,8 @@ function Jumpies({ updateRoute }) {
 
     const [searchfield, setSearchfield] = useState('');
 
+    const backBtn = '< Go back';
+
     const list = [
         { name: 'spongebob', image: img1, },
         { name: 'junior', image: img2 },
@@ -33,11 +35,18 @@ function Jumpies({ updateRoute }) {
         updateRoute('home');
     }
 
+    const goContact = () => {
+        
+    }
+
     return(
         <div className='background'>
-            <SearchBox search={updateSearchfield}/> 
-            <button onClick={()=> goHome()}>home</button>   
-            <div className='list'>
+            <div className='jump-top'>
+                <button className='home-btn' onClick={()=> goHome()}>{backBtn}</button>
+                <SearchBox search={updateSearchfield}/> 
+                <button className='contact-btn' onClick={()=> goContact()}>Contact</button>
+            </div>
+            <div className='jump-list'>
                 {filteredItems.map((item,index) => {
                     return(
                         <Jumpie pic={item.image} key={index} title={item.name}/>
