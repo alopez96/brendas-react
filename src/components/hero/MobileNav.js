@@ -15,17 +15,17 @@ function MobileNav({ goToRef, homeRef, aboutRef, contactRef }) {
     return(
         <div>
             {isNavOpen?
-            <div>
-                <div onClick={()=>toogleNav(isNavOpen)}>x</div>
+            <div className='fixed'>
                 <div className='mobile-nav'>
                     <ul>
                         <li onClick={()=>navigate(homeRef)}>Home</li>
                         <li onClick={()=>navigate(aboutRef)}>About</li>
                         <li onClick={()=>navigate(contactRef)}>Contact</li>
+                        <li onClick={()=>toogleNav(isNavOpen)}>x</li>
                     </ul>
                 </div>
             </div>    
-            : <div onClick={()=>toogleNav(isNavOpen)}>x</div>
+            : <div className='open-btn' onClick={()=>toogleNav(isNavOpen)}>x</div>
         }
         </div>
     )
