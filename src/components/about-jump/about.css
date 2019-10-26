@@ -22,6 +22,12 @@
     font-size: 1.4em;
     background-color: transparent;
     border: none;
+    transition: all .2s ease-in-out;
+}
+
+.primary:hover{
+    cursor: pointer;
+    transform: scale(1.09);
 }
 
 .secondary{
@@ -30,6 +36,12 @@
     font-size: 1.4em;
     background-color: transparent;
     border: none;
+    transition: all .2s ease-in-out;
+}
+
+.secondary:hover{
+    cursor: pointer;
+    transform: scale(1.09);
 }
 
 .content{
