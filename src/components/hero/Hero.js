@@ -23,6 +23,8 @@ function Hero({ isMobile, updateRoute }) {
   }
   else{
     return(
+      <div className='home-background'>
+        <p className='home-logo'>Brenda's Jumpies</p>
       <div className='mhero'>
           <img src={smallJumpie} alt='jumpie'></img>
           <div className='mhero-text'>
@@ -30,6 +32,7 @@ function Hero({ isMobile, updateRoute }) {
             <p>{subHeader}</p>
             <Cta updateRoute={updateRoute} isMobile={isMobile}/>
           </div>
+        </div>
         </div>
     )
   }

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './nav.css';
+import burger from './../../svg/mobileSizes/burger.svg';
 
 function MobileNav({ goToRef, homeRef, aboutRef, contactRef }) {
 
@@ -25,7 +26,9 @@ function MobileNav({ goToRef, homeRef, aboutRef, contactRef }) {
                     </ul>
                 </div>
             </div>    
-            : <div className='open-btn' onClick={()=>toogleNav(isNavOpen)}>x</div>
+            : <div className='open-btn' onClick={()=>toogleNav(isNavOpen)}>
+                <img src={burger}/>
+            </div>
         }
         </div>
     )
