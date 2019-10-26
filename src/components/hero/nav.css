@@ -2,3 +2,24 @@
 .nav-list li:hover{
     cursor: pointer;
 }
+
+.mobile-nav{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F7F7;
+    color: #505050;
+}
+
+.mobile-nav ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.mobile-nav li{
+    font-size: 2em;
+    margin: 3em;
+    font-weight: 600;
+}

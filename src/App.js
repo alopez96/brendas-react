@@ -58,7 +58,7 @@ function App() {
       {route === 'home' ?
       <div>
 
-        <Nav goToRef={goToRef} homeRef={homeRef}
+        <Nav goToRef={goToRef} homeRef={homeRef} isMobile={isMobile}
           aboutRef={aboutRef} contactRef={contactRef} />
 
       <div ref={homeRef}> 

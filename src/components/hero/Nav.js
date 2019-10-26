@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import LangButton from './LangButton';
+import MobileNav from './MobileNav';
 import './nav.css';
 
-function Nav ({ goToRef, homeRef, aboutRef, contactRef }) {
+function Nav ({ goToRef, homeRef, aboutRef, contactRef, isMobile }) {
 
     const [yindex, setyindex] = useState(window.pageYOffset);
 
@@ -18,32 +19,37 @@ function Nav ({ goToRef, homeRef, aboutRef, contactRef }) {
 
   const updatePosition = () => setyindex(window.pageYOffset);
 
-  if(yindex < 100){
-    return (
-      <div>  
-          <ul style={listStyle} className='nav-list'>
-              <li onClick={()=>goToRef(homeRef)} style={listItem}>Home</li>
-              <li onClick={()=>goToRef(aboutRef)} style={listItem}>Rentals</li>
-              <li onClick={()=>goToRef(contactRef)} style={listItem}>Contact</li>
-              <li style={listItem}> 
+  if(!isMobile){
+    if(yindex < 100){
+      return (
+        <div>  
+            <ul style={listStyle} className='nav-list'>
+                <li onClick={()=>goToRef(homeRef)} style={listItem}>Home</li>
+                <li onClick={()=>goToRef(aboutRef)} style={listItem}>Rentals</li>
+                <li onClick={()=>goToRef(contactRef)} style={listItem}>Contact</li>
+                <li style={listItem}> 
+                  <LangButton/>
+              </li>
+            </ul>
+        </div>);
+    }
+    else{
+        return(
+          <ul style={listStyle2} className='nav-list'>
+              <li onClick={()=>goToRef(homeRef)} style={listItem2}>Home</li>
+              <li onClick={()=>goToRef(aboutRef)} style={listItem2}>Rentals</li>
+                <li onClick={()=>goToRef(contactRef)} style={listItem2}>Contact</li>
+              <li style={listItem2}> 
                 <LangButton/>
             </li>
-          </ul>
-      </div>
-    );
-  }
-  else{
+          </ul>)
+    }}
+    else{
       return(
-        <ul style={listStyle2} className='nav-list'>
-            <li onClick={()=>goToRef(homeRef)} style={listItem2}>Home</li>
-            <li onClick={()=>goToRef(aboutRef)} style={listItem2}>Rentals</li>
-              <li onClick={()=>goToRef(contactRef)} style={listItem2}>Contact</li>
-            <li style={listItem2}> 
-              <LangButton/>
-          </li>
-        </ul>
+        <MobileNav goToRef={goToRef} homeRef={homeRef} 
+                aboutRef={aboutRef} contactRef={contactRef}/>
       )
-  }
+    }
 }
 
 const listStyle = {
