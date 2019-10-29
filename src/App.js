@@ -78,7 +78,7 @@ function App() {
 
       </div>
 
-      : <Jumpies updateRoute={updateRoute}/> }
+      : <Jumpies updateRoute={updateRoute} isMobile={isMobile}/> }
     </div>
   );
 }

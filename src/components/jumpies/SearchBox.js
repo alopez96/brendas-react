@@ -1,15 +1,24 @@
 import React from 'react';
 import './jumpies.css';
 
-const SearchBox = ({ search }) => {
+const SearchBox = ({ search, isMobile }) => {
 
-    return(
-        <div className='search-container'>
-            <label>Find a jump house</label>
-            <input className='search-box' type='search'
-                 placeholder='Enter a name of a character' onChange={search}/>
-        </div>
-    )
+    if(!isMobile){
+        return(
+            <div className='search-container'>
+                <label>Find a jump house</label>
+                <input className='search-box' type='search'
+                    placeholder='Enter a name of a character' onChange={search}/>
+            </div>
+        )}
+    else{
+        return(
+            <div className='search-container-m'>
+                <input className='search-box-m' type='search'
+                    placeholder='Enter a name' onChange={search}/>
+            </div>
+        )
+    }
 }
 
 export default SearchBox;

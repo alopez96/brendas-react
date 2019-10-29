@@ -13,7 +13,7 @@ import img9 from './images/b9.jpeg';
 import tent from './images/tent.jpg';
 
 
-function Jumpies({ updateRoute }) {
+function Jumpies({ updateRoute, isMobile }) {
 
     const [searchfield, setSearchfield] = useState('');
 
@@ -50,22 +50,41 @@ function Jumpies({ updateRoute }) {
         
     }
 
-    return(
-        <div className='background'>
-            <div className='jump-top'>
-                <button className='home-btn' onClick={()=> goHome()}>{backBtn}</button>
-                <SearchBox search={updateSearchfield}/> 
-                <button className='contact-btn' onClick={()=> goContact()}>Contact</button>
+    if(!isMobile)
+        return(
+            <div className='background'>
+                <div className='jump-top'>
+                    <button className='home-btn' onClick={()=> goHome()}>{backBtn}</button>
+                    <SearchBox search={updateSearchfield}/> 
+                    <button className='contact-btn' onClick={()=> goContact()}>Contact</button>
+                </div>
+                <div className='jump-list'>
+                    {filteredItems.map((item,index) => {
+                        return(
+                            <Jumpie pic={item.image} key={index} title={item.name}/>
+                        )
+                    })}
+                </div>
+            </div>)
+    else{
+        return(
+            <div className='background'>
+                <div className='jump-top-m'>
+                    <button className='home-btn-m' onClick={()=> goHome()}>{backBtn}</button>
+                    <button className='contact-btn-m' onClick={()=> goContact()}>Contact</button>
+                    <SearchBox search={updateSearchfield} isMobile={isMobile}/> 
+                
+                </div>
+                <div className='jump-list-m'>
+                    {filteredItems.map((item,index) => {
+                        return(
+                            <Jumpie pic={item.image} key={index} title={item.name} isMobile={isMobile}/>
+                        )
+                    })}
+                </div>
             </div>
-            <div className='jump-list'>
-                {filteredItems.map((item,index) => {
-                    return(
-                        <Jumpie pic={item.image} key={index} title={item.name}/>
-                    )
-                })}
-            </div>
-        </div>
-    )
+        )
+    }
 }
 
 export default Jumpies;
