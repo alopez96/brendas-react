@@ -12,6 +12,16 @@ import img8 from './images/b8.jpg';
 import img9 from './images/b9.jpeg';
 import tent from './images/tent.jpg';
 
+import ninja from './images/tmnt.JPG';
+import sponge from './images/sponge.JPG';
+import paw from './images/paw.JPG';
+import tinker from './images/tinker.JPG';
+import mickeyFriends from './images/mickeyFriends.JPG';
+import minions from './images/minions.JPG';
+import hulk from './images/hulk.JPG';
+import kitty from './images/helloKitty.JPG';
+import spider from './images/spiderman.JPG';
+
 
 function Jumpies({ updateRoute, isMobile }) {
 
@@ -32,6 +42,16 @@ function Jumpies({ updateRoute, isMobile }) {
         { name: 'The Good Dinosaur', image: img6 },
         { name: 'Mikey Mouse', image: img7 },
         { name: 'tent', image: tent },
+
+        { name: 'Ninja Turtles', image: ninja },
+        { name: 'Spongebob', image: sponge },
+        { name: 'Paw Patrol', image: paw },
+        { name: 'Tinker Bell', image: tinker },
+        { name: 'Mickey and Friends', image: mickeyFriends },
+        { name: 'Minions', image: minions },
+        { name: 'Hulk', image: hulk },
+        { name: 'Hello Kitty', image: kitty },
+        { name: 'Spiderman', image: spider },
     ]
 
     const updateSearchfield = (event) => {
