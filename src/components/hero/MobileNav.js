@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './nav.css';
 import burgerGray from './../../svg/mobileSizes/burger_gray.svg';
+import LangButton from './LangButton';
 
 function MobileNav({ goToRef, homeRef, aboutRef, contactRef }) {
 
@@ -22,6 +23,7 @@ function MobileNav({ goToRef, homeRef, aboutRef, contactRef }) {
                         <li onClick={()=>navigate(homeRef)}>Home</li>
                         <li onClick={()=>navigate(aboutRef)}>About</li>
                         <li onClick={()=>navigate(contactRef)}>Contact</li>
+                        <LangButton isMobile={true}/>
                         <li onClick={()=>toogleNav(isNavOpen)}>x</li>
                     </ul>
                 </div>

@@ -28,7 +28,7 @@ function Nav ({ goToRef, homeRef, aboutRef, contactRef, isMobile }) {
                 <li onClick={()=>goToRef(aboutRef)} style={listItem}>Rentals</li>
                 <li onClick={()=>goToRef(contactRef)} style={listItem}>Contact</li>
                 <li style={listItem}> 
-                  <LangButton/>
+                  <LangButton isMobile={false}/>
               </li>
             </ul>
         </div>);
@@ -40,7 +40,7 @@ function Nav ({ goToRef, homeRef, aboutRef, contactRef, isMobile }) {
               <li onClick={()=>goToRef(aboutRef)} style={listItem2}>Rentals</li>
                 <li onClick={()=>goToRef(contactRef)} style={listItem2}>Contact</li>
               <li style={listItem2}> 
-                <LangButton/>
+                <LangButton isMobile={false}/>
             </li>
           </ul>)
     }}

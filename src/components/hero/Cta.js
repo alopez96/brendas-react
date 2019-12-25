@@ -5,10 +5,7 @@ function Cta ({ isMobile, updateRoute }) {
   
     const ctatext = 'See rentals';
 
-    const handleCta = () => {
-        console.log('test')
-        updateRoute('list');
-    }
+    const handleCta = () => { updateRoute('list') }
 
     if(!isMobile){
         return (

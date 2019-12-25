@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './../../App.css';
 
-function LangButton () {
+function LangButton ({ isMobile }) {
 
     const [isengl, setisEngl] = useState(true);
     const [lang, setLang] = useState('Espanol');
@@ -17,9 +17,20 @@ function LangButton () {
         }
     }
 
-    return(
-        <button className='lang-btn' onClick={()=>toggleLang(isengl)}>{lang}</button> 
-    )
+    if(!isMobile){
+        return(
+            <button className='lang-btn' onClick={()=>toggleLang(isengl)}>{lang}</button> 
+        )}
+    else{
+        return(
+            <li style={mobileLangStyle}  onClick={()=>toggleLang(isengl)}>{lang}</li> 
+        )
+    }
 }
+
+const mobileLangStyle = {
+    fontSize: '22px',
+    fontWeight: '200'
+};
 
 export default LangButton;
