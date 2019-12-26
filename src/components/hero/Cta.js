@@ -1,9 +1,12 @@
 import React from 'react';
 import './../../App.css';
 
-function Cta ({ isMobile, updateRoute }) {
+function Cta ({ isMobile, updateRoute, isengl }) {
   
-    const ctatext = 'See rentals';
+    if(isengl)
+        var ctatext = 'See rentals';
+    else
+        var ctatext = 'Ver brincolines';
 
     const handleCta = () => { updateRoute('list') }
 

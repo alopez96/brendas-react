@@ -15,6 +15,9 @@ function App() {
   const [isMobile, setisMobile] = useState(window.innerWidth < 500);
   const [route, setRoute] = useState('home');
 
+  //state for language selected
+  const [isengl, setisEngl] = useState(true);
+
   let homeRef = React.createRef();
   let aboutRef = React.createRef();
   let contactRef = React.createRef();
@@ -58,20 +61,20 @@ function App() {
       {route === 'home' ?
       <div>
 
-        <Nav goToRef={goToRef} homeRef={homeRef} isMobile={isMobile}
-          aboutRef={aboutRef} contactRef={contactRef} />
+        <Nav goToRef={goToRef} homeRef={homeRef} isMobile={isMobile} aboutRef={aboutRef}
+           contactRef={contactRef} isengl={isengl} setisEngl={setisEngl} />
 
       <div ref={homeRef}> 
-        <Hero isMobile={isMobile} updateRoute={updateRoute}/> 
+        <Hero isMobile={isMobile} updateRoute={updateRoute} isengl={isengl}/> 
       </div>
 
       <div ref={aboutRef}> 
-        <AboutJump isMobile={isMobile} updateRoute={updateRoute}/> 
-        <AboutRentals isMobile={isMobile}/> 
+        <AboutJump isMobile={isMobile} updateRoute={updateRoute} isengl={isengl}/> 
+        <AboutRentals isMobile={isMobile} isengl={isengl}/> 
       </div>
 
       <div ref={contactRef}> 
-        <Contact isMobile={isMobile}/> 
+        <Contact isMobile={isMobile} isengl={isengl}/> 
       </div>
 
       <Footer/>

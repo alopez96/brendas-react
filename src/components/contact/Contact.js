@@ -6,13 +6,22 @@ import mail from './icons/mail.svg';
 import Icon from './Icon';
 
 
-function Contact ({isMobile}) {
+function Contact ({ isMobile, isengl }) {
 
-    const message = 'Call for a free quote.';
-    const subhead = 'We are located in Santa Rosa, CA and can deliver free of charge within the area. Ask for Anabel or Isidro.';
-    const text1 = 'We are located in Santa Rosa';
-    const text2 = 'We can drive free of charge within the area.';
-    const text3 = 'When contacting us, ask for Anabel or Isidro.';
+    if(isengl){
+        var message = 'Call for a free quote.';
+        var subhead = 'We are located in Santa Rosa, CA and can deliver free of charge within the area. Ask for Anabel or Isidro.';
+        var text1 = 'We are located in Santa Rosa';
+        var text2 = 'We can drive free of charge within the area.';
+        var text3 = 'When contacting us, ask for Anabel or Isidro.';
+    }
+    else{
+        var message = 'Llamenos para un estimado gratis.';
+        var subhead = 'Estamos localizados en Santa Rosa, CA y podemos entregar a ubicacioenos en la zona. Prengunte por Anabel o Isidro.';
+        var text1 = 'Estamos localizaods en Santa Rosa';
+        var text2 = 'Podemos entregrar a ubicaciones en la zona.';
+        var text3 = 'Pregunte por Anabel o Isidro.';
+    }
 
     const callData = {
         image: calling,

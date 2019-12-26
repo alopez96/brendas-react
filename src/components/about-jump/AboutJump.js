@@ -3,10 +3,20 @@ import jumpie from './../../svg/jumpieblue.svg';
 import jumpieMobile from './../../svg/mobileSizes/jumpieBlue.svg';
 import './about.css';
 
-function AboutJump ({ isMobile, updateRoute }) {
+function AboutJump ({ isMobile, updateRoute, isengl }) {
 
-    const header = 'Give them the party of their life.';
-    const subheader = 'Choose from a variety of jumpies, including Spongebob, Spiderman, Hulk, Frozen, and more.';
+    if(isengl){
+        var header = 'Give them the party of their life.';
+        var subheader = 'Choose from a variety of jumpies, including Spongebob, Spiderman, Hulk, Frozen, and more.';
+        var primary = 'See jumpies >';
+        var secondary = 'Give us a call >';
+    }
+    else{
+        var header = 'Dales un dia que no olvidaran.';
+        var subheader = 'Tenemos de muchas variadades, incluyendo Spongebob, Spiderman, Hulk, Frozen, y mas.';
+        var primary = 'Ver brincolines >';
+        var secondary = 'Llamenos>';
+    }
 
     const seeJumpies = () => {
         updateRoute('list');
@@ -28,8 +38,8 @@ function AboutJump ({ isMobile, updateRoute }) {
                         <h3 className='head'>{header}</h3>
                         <p className='subhead'>{subheader}</p>
                         <div className='buttons'>
-                            <button className='primary' onClick={() => seeJumpies()}>See jumpies ></button>
-                            <button className='secondary' onClick={() => call()}>Give us a call ></button>
+                            <button className='primary' onClick={() => seeJumpies()}>{primary}</button>
+                            <button className='secondary' onClick={() => call()}>{secondary}</button>
                         </div>
                     </div>
 
@@ -44,8 +54,8 @@ function AboutJump ({ isMobile, updateRoute }) {
                 <div className='mcontent'>
                     <h3 className='mhead'>{header}</h3>
                     <p className='msubhead'>{subheader}</p>   
-                    <button className='mprimary' onClick={() => seeJumpies()}>See jumpies ></button>
-                    <button className='msecondary' onClick={() => call()}>Give us a call ></button> 
+                    <button className='mprimary' onClick={() => seeJumpies()}>{primary}</button>
+                    <button className='msecondary' onClick={() => call()}>{secondary}</button> 
                 </div>
             </div>
         )

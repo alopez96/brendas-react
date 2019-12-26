@@ -1,9 +1,8 @@
 import React, {useState} from 'react';
 import './../../App.css';
 
-function LangButton ({ isMobile }) {
+function LangButton ({ isMobile, isengl, setisEngl }) {
 
-    const [isengl, setisEngl] = useState(true);
     const [lang, setLang] = useState('Espanol');
 
     const toggleLang = (isengl) => {
