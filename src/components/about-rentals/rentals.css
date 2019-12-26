@@ -22,6 +22,11 @@
     width: 70vw;
 }
 
+.mbuttons{
+    display: flex;
+    flex-direction: column;
+}
+
 .msubhead{
     font-size: 1.2em;
     width: 70vw;

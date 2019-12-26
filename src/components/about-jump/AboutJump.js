@@ -53,9 +53,11 @@ function AboutJump ({ isMobile, updateRoute, isengl }) {
                 <img className='mimage' src={jumpieMobile} alt='jumpie'/>
                 <div className='mcontent'>
                     <h3 className='mhead'>{header}</h3>
-                    <p className='msubhead'>{subheader}</p>   
-                    <a className='mprimary' onClick={() => seeJumpies()}>{primary}</a>
-                    <a className='msecondary' onClick={() => call()}>{secondary}</a> 
+                    <p className='msubhead'>{subheader}</p>
+                    <div className='mbuttons'>
+                        <a className='mprimary' onClick={() => seeJumpies()}>{primary}</a>
+                        <a className='msecondary' onClick={() => call()}>{secondary}</a> 
+                    </div>
                 </div>
             </div>
         )
