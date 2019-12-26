@@ -17,7 +17,11 @@ function App() {
 
   //state for language selected
   const [isengl, setisEngl] = useState(true);
+  useEffect(() => {
+    console.log('isEngl', isengl)
+  }, [isengl]);
 
+  //variables for nav references
   let homeRef = React.createRef();
   let aboutRef = React.createRef();
   let contactRef = React.createRef();
