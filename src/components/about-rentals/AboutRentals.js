@@ -26,7 +26,7 @@ function AboutRentals ({isMobile, isengl}) {
                 <div className='content'>
                     <h3 className='head'>{header}</h3>
                     <p className='subhead'>{subheader}</p>    
-                    <button className='primary' onClick={() => call()}>{secondary}</button>
+                    <a className='primary' onClick={() => call()}>{secondary}</a>
                 </div>
                 <div>
                     <img className='image' src={rental} alt='tent'/>
@@ -41,7 +41,7 @@ function AboutRentals ({isMobile, isengl}) {
                 <div className='mcontent'>
                     <h3 className='mhead'>{header}</h3>
                     <p className='msubhead'>{subheader}</p>   
-                    <button className='mprimary' onClick={() => call()}>{secondary}</button>
+                    <a className='mprimary' onClick={() => call()}>{secondary}</a>
                 </div>
             </div>
         );

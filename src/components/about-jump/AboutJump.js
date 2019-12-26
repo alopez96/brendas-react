@@ -38,8 +38,8 @@ function AboutJump ({ isMobile, updateRoute, isengl }) {
                         <h3 className='head'>{header}</h3>
                         <p className='subhead'>{subheader}</p>
                         <div className='buttons'>
-                            <button className='primary' onClick={() => seeJumpies()}>{primary}</button>
-                            <button className='secondary' onClick={() => call()}>{secondary}</button>
+                            <a className='primary' onClick={() => seeJumpies()}>{primary}</a>
+                            <a className='secondary' onClick={() => call()}>{secondary}</a>
                         </div>
                     </div>
 
@@ -54,8 +54,8 @@ function AboutJump ({ isMobile, updateRoute, isengl }) {
                 <div className='mcontent'>
                     <h3 className='mhead'>{header}</h3>
                     <p className='msubhead'>{subheader}</p>   
-                    <button className='mprimary' onClick={() => seeJumpies()}>{primary}</button>
-                    <button className='msecondary' onClick={() => call()}>{secondary}</button> 
+                    <a className='mprimary' onClick={() => seeJumpies()}>{primary}</a>
+                    <a className='msecondary' onClick={() => call()}>{secondary}</a> 
                 </div>
             </div>
         )
