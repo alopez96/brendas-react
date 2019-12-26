@@ -22,6 +22,8 @@ import hulk from './images/hulk.JPG';
 import kitty from './images/helloKitty.JPG';
 import spider from './images/spiderman.JPG';
 
+import ContactInfo from './ContactInfo';
+
 
 function Jumpies({ updateRoute, isMobile }) {
 
@@ -66,17 +68,12 @@ function Jumpies({ updateRoute, isMobile }) {
         updateRoute('home');
     }
 
-    const goContact = () => {
-        
-    }
-
     if(!isMobile)
         return(
             <div className='background'>
                 <div className='jump-top'>
                     <button className='home-btn' onClick={()=> goHome()}>{backBtn}</button>
                     <SearchBox search={updateSearchfield}/> 
-                    <button className='contact-btn' onClick={()=> goContact()}>Contact</button>
                 </div>
                 <div className='jump-list'>
                     {filteredItems.map((item,index) => {
@@ -85,15 +82,17 @@ function Jumpies({ updateRoute, isMobile }) {
                         )
                     })}
                 </div>
+                <ContactInfo/>
             </div>)
     else{
         return(
             <div className='background'>
                 <div className='jump-top-m'>
                     <button className='home-btn-m' onClick={()=> goHome()}>{backBtn}</button>
-                    <button className='contact-btn-m' onClick={()=> goContact()}>Contact</button>
                     <SearchBox search={updateSearchfield} isMobile={isMobile}/> 
-                
+                    <a href={'tel: 707-921-6530'} className='data-text'>
+                    (707) 921-6530
+                    </a>
                 </div>
                 <div className='jump-list-m'>
                     {filteredItems.map((item,index) => {

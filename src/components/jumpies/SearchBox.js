@@ -14,6 +14,7 @@ const SearchBox = ({ search, isMobile }) => {
     else{
         return(
             <div className='search-container-m'>
+                <label>Find a jump house</label>
                 <input className='search-box-m' type='search'
                     placeholder='Enter a name' onChange={search}/>
             </div>
