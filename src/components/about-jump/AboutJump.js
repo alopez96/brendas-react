@@ -7,13 +7,13 @@ function AboutJump ({ isMobile, updateRoute, isengl }) {
 
     if(isengl){
         var header = 'Give them the party of their life.';
-        var subheader = 'Choose from a variety of jumpies, including Spongebob, Spiderman, Hulk, Frozen, and more.';
+        var subheader = 'Choose from a variety of jumpies, including Slides, Water Slides, and castles with Spiderman, Hulk, Frozen, and more.';
         var primary = 'See jumpies >';
         var secondary = 'Give us a call >';
     }
     else{
-        var header = 'Dales un dia que no olvidaran.';
-        var subheader = 'Tenemos de muchas variadades, incluyendo Spongebob, Spiderman, Hulk, Frozen, y mas.';
+        var header = 'Dales un dia que no olvidarian.';
+        var subheader = 'Tenemos muchas opciones de brincolines, incluyendo Spongebob, Spiderman, Hulk, Frozen, y mas.';
         var primary = 'Ver brincolines >';
         var secondary = 'Llamenos>';
     }

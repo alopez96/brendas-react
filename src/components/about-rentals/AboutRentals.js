@@ -7,7 +7,7 @@ function AboutRentals ({isMobile, isengl}) {
 
     if(isengl){
         var header = 'Need tables, chairs, or tents?';
-        var subheader = 'Tell us how many of each, and let us deliver and pickup to your location.';
+        var subheader = 'We have tables, chairs and tents for your party and we can deliver to parks or homes.';
         var secondary = 'Give us a call >';
     }
     else{
