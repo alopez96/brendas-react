@@ -11,8 +11,7 @@ function Contact ({ isMobile, isengl }) {
     if(isengl){
         var message = 'Call for a free quote.';
         var subhead = 'We are located in Santa Rosa, CA and can deliver free of charge within the area. Ask for Anabel or Isidro.';
-        var text1 = 'We are located in Santa Rosa';
-        var text2 = 'We can drive free of charge within the area.';
+        var text1 = 'We can deliver and pick up free of charge within the surrounding area of Santa Rosa, CA.';
         var text3 = 'When contacting us, ask for Anabel or Isidro.';
     }
     else{
@@ -69,7 +68,6 @@ function Contact ({ isMobile, isengl }) {
                     <p className='mhead'>{message}</p>
                         <ul className='msubhead'>
                             <li style={{marginBottom:'1em'}}>{text1}</li>
-                            <li style={{marginBottom:'1em'}}>{text2}</li>
                             <li style={{marginBottom:'2em'}}>{text3}</li>
                         </ul>
                     <div>
