@@ -64,6 +64,7 @@ function Jumpies({ updateRoute }) {
     });
 
     const goHome = () => {
+        window.scrollTo(0, 0)
         updateRoute('home');
     }
 

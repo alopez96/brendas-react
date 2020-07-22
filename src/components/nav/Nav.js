@@ -5,7 +5,7 @@ import './nav.css';
 
 function Nav ({ goToRef, homeRef, aboutRef, contactRef, isMobile, isengl, setisEngl }) {
 
-  const [lang, setLang] = useState('Espanol');
+  const [lang, setLang] = useState('Espa\u00f1ol');
 
   const toggleLang = (isengl) => {
       if(isengl){
@@ -15,7 +15,7 @@ function Nav ({ goToRef, homeRef, aboutRef, contactRef, isMobile, isengl, setisE
       }
       else if(!isengl){
           console.log('set lang to english')
-          setLang('Espanol')
+          setLang('Espa\u00f1ol')
           setisEngl(true)
       }
   }
