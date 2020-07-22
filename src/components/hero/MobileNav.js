@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './nav.css';
+import './../nav/nav.css';
 import burgerGray from './../../svg/mobileSizes/burger_gray.svg';
 import LangButton from './LangButton';
 

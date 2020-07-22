@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
-import Nav from './components/hero/Nav';
+import Nav from './components/nav/Nav';
 import Hero from './components/hero/Hero';
 import AboutJump from './components/about-jump/AboutJump';
 import AboutRentals from './components/about-rentals/AboutRentals';

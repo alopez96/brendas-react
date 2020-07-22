@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import LangButton from './LangButton';
-import MobileNav from './MobileNav';
+import LangButton from '../hero/LangButton';
+import MobileNav from '../hero/MobileNav';
 import './nav.css';
 
 function Nav ({ goToRef, homeRef, aboutRef, contactRef, isMobile,
