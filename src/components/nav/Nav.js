@@ -1,11 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import LangButton from '../hero/LangButton';
-import MobileNav from '../hero/MobileNav';
+import LangButton from './LangButton';
+import MobileNav from './MobileNav';
 import './nav.css';
 
-function Nav ({ goToRef, homeRef, aboutRef, contactRef, isMobile,
-                isengl, setisEngl }) {
+function Nav ({ goToRef, homeRef, aboutRef, contactRef, isMobile, isengl, setisEngl }) {
 
+  const [lang, setLang] = useState('Espanol');
+
+  const toggleLang = (isengl) => {
+      if(isengl){
+          console.log('set lang to spanish')
+          setLang('English')
+          setisEngl(false)
+      }
+      else if(!isengl){
+          console.log('set lang to english')
+          setLang('Espanol')
+          setisEngl(true)
+      }
+  }
+        
     const [yindex, setyindex] = useState(window.pageYOffset);
 
     //like component did mount
@@ -29,7 +43,7 @@ function Nav ({ goToRef, homeRef, aboutRef, contactRef, isMobile,
                 <li onClick={()=>goToRef(aboutRef)} style={listItem}>Rentals</li>
                 <li onClick={()=>goToRef(contactRef)} style={listItem}>Contact</li>
                 <li style={listItem}> 
-                  <LangButton isMobile={false} isengl={isengl} setisEngl={setisEngl}/>
+                  <LangButton isMobile={false} isengl={isengl} setisEngl={setisEngl} lang={lang} toggleLang={toggleLang} />
               </li>
             </ul>
         </div>);
@@ -41,7 +55,7 @@ function Nav ({ goToRef, homeRef, aboutRef, contactRef, isMobile,
               <li onClick={()=>goToRef(aboutRef)} style={listItem2}>Rentals</li>
                 <li onClick={()=>goToRef(contactRef)} style={listItem2}>Contact</li>
               <li style={listItem2}> 
-                <LangButton isMobile={false} isengl={isengl} setisEngl={setisEngl}/>
+                <LangButton isMobile={false} isengl={isengl} setisEngl={setisEngl} lang={lang} toggleLang={toggleLang}/>
             </li>
           </ul>)
     }}
@@ -49,7 +63,7 @@ function Nav ({ goToRef, homeRef, aboutRef, contactRef, isMobile,
       return(
         <MobileNav goToRef={goToRef} homeRef={homeRef} 
                 aboutRef={aboutRef} contactRef={contactRef} isengl={isengl} 
-                setisEngl={setisEngl}/>
+                setisEngl={setisEngl} lang={lang} toggleLang={toggleLang}/>
       )
     }
 }
