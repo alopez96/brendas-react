@@ -17,7 +17,7 @@ function Contact ({ isMobile, isengl }) {
     }
     else{
         var message = 'Llamenos para un estimado gratis.';
-        var subhead = 'Estamos localizados en Santa Rosa, CA y podemos entregar a ubicacioenos en la zona. Prengunte por Anabel o Isidro.';
+        var subhead = 'Estamos localizados en Santa Rosa, CA y podemos entregar a ubicaciones en la area. Prengunte por Anabel o Isidro.';
         var text1 = 'Estamos localizaods en Santa Rosa';
         var text2 = 'Podemos entregrar a ubicaciones en la zona.';
         var text3 = 'Pregunte por Anabel o Isidro.';
