@@ -73,8 +73,10 @@ function App() {
       </div>
 
       <div ref={aboutRef}> 
-        <AboutJump isMobile={isMobile} updateRoute={updateRoute} isengl={isengl}/> 
-        <AboutRentals isMobile={isMobile} isengl={isengl}/> 
+        <AboutJump isMobile={isMobile} updateRoute={updateRoute} isengl={isengl}
+            goToRef={goToRef} contactRef={contactRef} /> 
+        <AboutRentals isMobile={isMobile} isengl={isengl}
+            goToRef={goToRef} contactRef={contactRef} /> 
       </div>
 
       <div ref={contactRef}> 

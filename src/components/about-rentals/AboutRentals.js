@@ -3,21 +3,21 @@ import rental from './../../svg/rentals.svg';
 import './rentals.css';
 import tent from './../../svg/mobileSizes/rentals.svg';
 
-function AboutRentals ({isMobile, isengl}) {
+function AboutRentals ({ isMobile, isengl, goToRef, contactRef }) {
 
     if(isengl){
         var header = 'Need tables, chairs, or tents?';
         var subheader = 'We have tables, chairs and tents for your party and we can deliver to parks or homes.';
-        var secondary = 'Give us a call >';
+        var secondary = 'Contact us >';
     }
     else{
         var header = 'Necesita mesas, sillas, o carpa?';
         var subheader = 'Usted nos dice cuantas y nosotros se las llevamos.';
-        var secondary = 'Llamenos>';
+        var secondary = 'Contactar >';
     }
     
     const call = () => {
-        window.open('tel: 707-921-6530')
+        goToRef(contactRef)
     }
 
     if(!isMobile){
