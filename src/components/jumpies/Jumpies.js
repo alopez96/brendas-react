@@ -36,7 +36,7 @@ function Jumpies({ updateRoute, isMobile }) {
         { name: 'Princess Castle Slide', image: img8 },
 
         { name: 'Tent', image: tent },
-        
+
         { name: 'Pony', image: img1, },
         { name: 'Moana', image: img3 },
         { name: 'Batman', image: img5 },
@@ -70,7 +70,7 @@ function Jumpies({ updateRoute, isMobile }) {
     return(
         <div className='background'>
             <div className='jump-top'>
-                <GoHomeNav goHome={goHome}/>
+                <GoHomeNav goHome={goHome} isMobile={isMobile} />
                 <SearchBox search={updateSearchfield}/> 
             </div>
             <div className='jump-list'>
