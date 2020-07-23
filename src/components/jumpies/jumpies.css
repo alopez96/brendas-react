@@ -17,9 +17,7 @@
 .jump-card{
     display: flex;
     flex-direction: column;
-    /* background-color: #E5E5E5; */
     width: 20vw;
-    /* height: 50vh; */
     margin: 1rem 0.7rem -0.1rem 0.7rem;
     border-radius: 0.15rem;
     align-items: center;
@@ -92,18 +90,29 @@
 
     .search-container{
         margin-top: .2rem;
+        margin-bottom: -1.5rem;
     }
     
     .jump-card{
-        width: 40vw;
-        margin: 0.6em;
-        border-radius: 0.1rem;
+        width: 45vw;
+        margin: 0rem 0.2em 0.2rem 0.2rem;
+        border-radius: 0.15rem;
     }
     
     .picture{
-        width: 40vw;
-        border-radius: 0.1rem;
+        width: 45vw;
+        border-radius: 0.15rem;
+        object-fit: contain;
     }
+    
+    #card-label {
+        position:relative;
+        visibility:visible;
+        width: 45vw;
+        color: #000;
+        font-size: 1rem;
+        margin: -2rem 0rem -5rem 0rem;
+    } 
     
     .search-container label{
         font-size: 1.5rem;

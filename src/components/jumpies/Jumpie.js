@@ -1,25 +1,15 @@
 import React from 'react';
 import './jumpies.css';
 
-function Jumpie ( { pic, title, isMobile }){
+function Jumpie ( { pic, title }){
 
-    if(!isMobile){
-        return(
-            <div className='jump-card'>            
-                <img className='picture hover' src={pic} alt={title}/>
-                <div id='card-label'>
-                    <label>{title}</label>
-                </div>    
-            </div>)
-    }
-    else{
-        return(
-            <div className='jump-card-m'>            
-                <img className='picture-m' src={pic} alt={title}/>
+    return(
+        <div className='jump-card'>            
+            <img className='picture hover' src={pic} alt={title}/>
+            <div id='card-label'>
                 <label>{title}</label>
-            </div>
-        )
-    }
+            </div>    
+        </div>)
 }
 
 export default Jumpie;

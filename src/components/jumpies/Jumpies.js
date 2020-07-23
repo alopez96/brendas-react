@@ -24,25 +24,24 @@ import hulk from './images/hulk.JPG';
 import kitty from './images/helloKitty.JPG';
 import spider from './images/spiderman.JPG';
 
-function Jumpies({ updateRoute }) {
+function Jumpies({ updateRoute, isMobile }) {
 
     const [searchfield, setSearchfield] = useState('');
-
-    const backBtn = '< Go back';
 
     const list = [
         
         { name: 'Castle Slide', image: img2 },
-        
         { name: 'Castle Slide', image: img4 },
         { name: 'Castle Slide', image: img9 },
         { name: 'Princess Castle Slide', image: img8 },
+
+        { name: 'Tent', image: tent },
+        
         { name: 'Pony', image: img1, },
         { name: 'Moana', image: img3 },
         { name: 'Batman', image: img5 },
         { name: 'The Good Dinosaur', image: img6 },
         { name: 'Mikey Mouse', image: img7 },
-        { name: 'Tent', image: tent },
 
         { name: 'Ninja Turtles', image: ninja },
         { name: 'Spongebob', image: sponge },
@@ -77,7 +76,7 @@ function Jumpies({ updateRoute }) {
             <div className='jump-list'>
                 {filteredItems.map((item,index) => {
                     return(
-                        <Jumpie pic={item.image} key={index} title={item.name}/>
+                        <Jumpie pic={item.image} key={index} title={item.name} isMobile={isMobile}/>
                     )
                 })}
             </div>
