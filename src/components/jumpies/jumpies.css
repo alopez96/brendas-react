@@ -17,17 +17,36 @@
 .jump-card{
     display: flex;
     flex-direction: column;
-    background-color: #E5E5E5;
+    /* background-color: #E5E5E5; */
     width: 20vw;
-    margin: 1em;
+    /* height: 50vh; */
+    margin: 1rem 0.7rem -0.1rem 0.7rem;
     border-radius: 0.15rem;
     align-items: center;
 }
 
 .picture{
     width: 20vw;
-    margin-bottom: 0.5em;
+    height: 50vh;
+    object-fit: contain;
     border-radius: 0.15rem;
+}
+
+#card-label {
+    position:relative;
+    bottom:30px;
+    left:0px;
+    visibility:hidden;
+    opacity: 1;
+    background-color: #DADADA;
+    width: 20vw;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+    
+.jump-card:hover #card-label {
+    visibility:visible;
 }
 
 .search-container{

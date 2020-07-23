@@ -6,8 +6,10 @@ function Jumpie ( { pic, title, isMobile }){
     if(!isMobile){
         return(
             <div className='jump-card'>            
-                <img className='picture' src={pic} alt={title}/>
-                <label>{title}</label>
+                <img className='picture hover' src={pic} alt={title}/>
+                <div id='card-label'>
+                    <label>{title}</label>
+                </div>    
             </div>)
     }
     else{

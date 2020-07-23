@@ -32,17 +32,17 @@ function Jumpies({ updateRoute }) {
 
     const list = [
         
-        { name: 'slide', image: img2 },
+        { name: 'Castle Slide', image: img2 },
         
-        { name: 'slide 2', image: img4 },
-        { name: 'slide 3', image: img9 },
-        { name: 'pink slide', image: img8 },
+        { name: 'Castle Slide', image: img4 },
+        { name: 'Castle Slide', image: img9 },
+        { name: 'Princess Castle Slide', image: img8 },
         { name: 'Pony', image: img1, },
         { name: 'Moana', image: img3 },
         { name: 'Batman', image: img5 },
         { name: 'The Good Dinosaur', image: img6 },
         { name: 'Mikey Mouse', image: img7 },
-        { name: 'tent', image: tent },
+        { name: 'Tent', image: tent },
 
         { name: 'Ninja Turtles', image: ninja },
         { name: 'Spongebob', image: sponge },
