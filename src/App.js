@@ -9,6 +9,8 @@ import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import Jumpies from './components/jumpies/Jumpies';
 
+import LazyLoad from 'react-lazyload';
+
 function App() {
 
   const [width, setWidth] = useState(window.innerWidth);
@@ -72,12 +74,14 @@ function App() {
         <Hero isMobile={isMobile} updateRoute={updateRoute} isengl={isengl}/> 
       </div>
 
+      <LazyLoad placeholder={<div>Loading...</div>}>
       <div ref={aboutRef}> 
         <AboutJump isMobile={isMobile} updateRoute={updateRoute} isengl={isengl}
             goToRef={goToRef} contactRef={contactRef} /> 
         <AboutRentals isMobile={isMobile} isengl={isengl}
             goToRef={goToRef} contactRef={contactRef} /> 
       </div>
+      </LazyLoad>
 
       <div ref={contactRef}> 
         <Contact isMobile={isMobile} isengl={isengl}/> 
