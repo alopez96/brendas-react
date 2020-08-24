@@ -24,6 +24,8 @@ import hulk from './images/hulk.JPG';
 import kitty from './images/helloKitty.JPG';
 import spider from './images/spiderman.JPG';
 
+import LazyLoad from 'react-lazyload';
+
 function Jumpies({ updateRoute, isMobile }) {
 
     const [searchfield, setSearchfield] = useState('');
@@ -76,7 +78,9 @@ function Jumpies({ updateRoute, isMobile }) {
             <div className='jump-list'>
                 {filteredItems.map((item,index) => {
                     return(
+                        <LazyLoad placeholder={<div>Loading...</div>}>
                         <Jumpie pic={item.image} key={index} title={item.name} isMobile={isMobile}/>
+                        </LazyLoad>
                     )
                 })}
             </div>
