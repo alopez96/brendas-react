@@ -6,7 +6,7 @@ import './about.css';
 function AboutJump ({ isMobile, updateRoute, isengl, goToRef, contactRef }) {
 
     if(isengl){
-        var header = 'Give them the party of their life.';
+        var header = 'Give them a birthday party they will remember.';
         var subheader = 'Choose from a variety of jumpies, including Slides, Water Slides, and castles with Spiderman, Hulk, Frozen, and more.';
         var primary = 'See jumpies >';
         var secondary = 'Contact us >';

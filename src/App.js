@@ -8,6 +8,7 @@ import AboutRentals from './components/about-rentals/AboutRentals';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import Jumpies from './components/jumpies/Jumpies';
+import JumpieSlider from './components/jumpies/JumpieSlider';
 
 import LazyLoad from 'react-lazyload';
 
@@ -64,7 +65,6 @@ function App() {
 
   return (
     <div className='app'>
-      {route === 'home' ?
       <div>
 
         <Nav goToRef={goToRef} homeRef={homeRef} isMobile={isMobile} aboutRef={aboutRef}
@@ -83,6 +83,9 @@ function App() {
       </div>
       </LazyLoad>
 
+      <JumpieSlider/>
+      <button>View all</button>
+
       <div ref={contactRef}> 
         <Contact isMobile={isMobile} isengl={isengl}/> 
       </div>
@@ -90,8 +93,6 @@ function App() {
       <Footer/>
 
       </div>
-
-      : <Jumpies updateRoute={updateRoute} isMobile={isMobile}/> }
     </div>
   );
 }

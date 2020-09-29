@@ -2,12 +2,13 @@ import React from 'react';
 import rental from './../../svg/rentals.svg';
 import './rentals.css';
 import tent from './../../svg/mobileSizes/rentals.svg';
+import tent2 from './../jumpies/images/tent.jpg';
 
 function AboutRentals ({ isMobile, isengl, goToRef, contactRef }) {
 
     if(isengl){
-        var header = 'Need tables, chairs, or tents?';
-        var subheader = 'We have tables, chairs and tents for your party and we can deliver to parks or homes.';
+        var header = 'Rent tents, tables, and chairs.';
+        var subheader = 'We have what you need to seat a large group, and we can deliver to parks or homes.';
         var secondary = 'Contact us >';
     }
     else{
@@ -29,7 +30,7 @@ function AboutRentals ({ isMobile, isengl, goToRef, contactRef }) {
                     <a className='primary' onClick={() => call()}>{secondary}</a>
                 </div>
                 <div>
-                    <img className='image' src={rental} alt='tent'/>
+                    <img className='image' src={tent2} alt='tent'/>
                 </div>
             </div>
         );
