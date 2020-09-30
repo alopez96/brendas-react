@@ -96,6 +96,25 @@
     margin: 10px;
 }
 
+.position-relative{
+    position:relative;
+}
+
+.slider-btn{
+    position:absolute;
+    bottom: 20px;
+    left: 30%;
+}
+
+.secondary-cta{
+    font-size: 1.2rem;
+    border-radius: 0.2rem;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    color: white;
+    border: solid;
+    background-color:transparent;
+    border-width: 2px;
+}
 
 /* mobile */
 /* ----------- phones ----------- */
@@ -135,15 +154,15 @@
     .jump-card{
         display: flex;
         flex-direction: column;
-        width: 100vw;
-        height: 100vh;
+        width: 50vw;
+        height: 50vh;
         align-items: center;
         margin: 0px;
     }
     
     .picture{
-        width: 100vw;
-        height: 100vh;
+        width: 50vw;
+        height: 50vh;
         object-fit: contain;
     }
     
@@ -179,5 +198,9 @@
         height: 70vh;
         padding: 0px;
         margin: 0px;
+    }
+
+    .secondary-cta{
+        font-size: 1rem;
     }
 }

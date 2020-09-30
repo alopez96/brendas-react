@@ -71,13 +71,8 @@ function App() {
         <Nav goToRef={goToRef} homeRef={homeRef} isMobile={isMobile} aboutRef={aboutRef}
            contactRef={contactRef} isengl={isengl} setisEngl={setisEngl} />
 
-      <div ref={homeRef}> 
+      <div ref={homeRef}>
         <Hero isMobile={isMobile} updateRoute={updateRoute} isengl={isengl}/> 
-      </div>
-
-      <JumpieSlider/>
-      <div className='text-center gray-back'>
-        <button className='primary-cta' onClick={() => updateRoute('jumpies')} >View all rentals</button>
       </div>
 
       <LazyLoad placeholder={<div>Loading...</div>}>
@@ -88,6 +83,8 @@ function App() {
             goToRef={goToRef} contactRef={contactRef} /> 
       </div>
       </LazyLoad>
+
+      <JumpieSlider updateRoute={updateRoute}/>
 
       <div ref={contactRef}> 
         <Contact isMobile={isMobile} isengl={isengl}/> 
