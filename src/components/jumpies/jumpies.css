@@ -11,23 +11,21 @@
     display: flex;
     flex-flow: wrap;
     justify-content: center;
-    margin-bottom: 0.5em;
 }
 
 .jump-card{
     display: flex;
     flex-direction: column;
     width: 20vw;
-    margin: 1rem 0.7rem -0.1rem 0.7rem;
-    border-radius: 0.15rem;
+    height: 50vh;
     align-items: center;
+    margin: 5px;
 }
 
 .picture{
     width: 20vw;
     height: 50vh;
-    object-fit: contain;
-    border-radius: 0.15rem;
+    object-fit: cover;
 }
 
 #card-label {
@@ -38,6 +36,7 @@
     opacity: 1;
     background-color: #DADADA;
     width: 20vw;
+    height: 2rem;
     color: white;
     text-align: center;
     font-size: 1.5rem;
@@ -125,7 +124,6 @@
         border: none;
         border-radius: 0.15rem;
         font-size: 1.2rem;
-    
     }
     
     .jump-top{
@@ -135,23 +133,27 @@
     }
     
     .jump-card{
-        width: 45vw;
-        margin: 0rem 0.2em 0.2rem 0.2rem;
-        border-radius: 0.15rem;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        margin: 0px;
     }
     
     .picture{
-        width: 45vw;
-        border-radius: 0.15rem;
+        width: 100vw;
+        height: 100vh;
         object-fit: contain;
     }
     
     #card-label {
         position:relative;
         visibility:visible;
-        width: 45vw;
+        width: 100%;
         color: #000;
-        font-size: 1rem;
+        font-size: 1.2rem;
+        height: 10rem;
         margin: -2rem 0rem -5rem 0rem;
     } 
 

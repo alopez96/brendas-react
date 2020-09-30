@@ -24,6 +24,8 @@ import hulk from './images/hulk.JPG';
 import kitty from './images/helloKitty.JPG';
 import spider from './images/spiderman.JPG';
 
+import bigSlide from './images/big_slide.jpg';
+
 import LazyLoad from 'react-lazyload';
 
 function Jumpies({ updateRoute, isMobile }) {
@@ -32,12 +34,14 @@ function Jumpies({ updateRoute, isMobile }) {
 
     const list = [
         
-        { name: 'Castle Slide', image: img2 },
-        { name: 'Castle Slide', image: img4 },
+        { name: 'Castle Water Slide', image: img2 },
+        { name: 'Castle Water Slide', image: img4 },
         { name: 'Castle Slide', image: img9 },
         { name: 'Princess Castle Slide', image: img8 },
 
         { name: 'Tent', image: tent },
+
+        { name: 'Water Slide', image: bigSlide },
 
         { name: 'Pony', image: img1, },
         { name: 'Moana', image: img3 },
@@ -79,7 +83,7 @@ function Jumpies({ updateRoute, isMobile }) {
                 {filteredItems.map((item,index) => {
                     return(
                         <LazyLoad placeholder={<div>Loading...</div>}>
-                        <Jumpie pic={item.image} key={index} title={item.name} isMobile={isMobile}/>
+                            <Jumpie pic={item.image} key={index} title={item.name} isMobile={isMobile}/>
                         </LazyLoad>
                     )
                 })}

@@ -59,12 +59,13 @@ function App() {
   }
 
   const updateRoute = (value) => {
-    console.log('route', value)
-      setRoute(value);  
+      window.scrollTo(0, 0)
+      setRoute(value);
   }
 
   return (
     <div className='app'>
+      {route === 'home' ?
       <div>
 
         <Nav goToRef={goToRef} homeRef={homeRef} isMobile={isMobile} aboutRef={aboutRef}
@@ -76,7 +77,7 @@ function App() {
 
       <JumpieSlider/>
       <div className='text-center gray-back'>
-        <button className='primary-cta'>View all rentals</button>
+        <button className='primary-cta' onClick={() => updateRoute('jumpies')} >View all rentals</button>
       </div>
 
       <LazyLoad placeholder={<div>Loading...</div>}>
@@ -95,6 +96,7 @@ function App() {
       <Footer/>
 
       </div>
+      : <Jumpies updateRoute={updateRoute} isMobile={isMobile}/> }
     </div>
   );
 }
