@@ -249,8 +249,16 @@
         font-size: 1em;
         width: 50vw;
     }
+    
     .main{
-        margin: 0em;
+        display: flex;
+        background-color: #F7F7F7;
+        flex-direction: row;
+        height: auto;
+        margin: 1.2em;
+        padding: 5rem 0 5rem 0;
+        justify-content: center;
+        align-items: center;
     }
 
     .gray-back{
