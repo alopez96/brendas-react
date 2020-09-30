@@ -164,6 +164,11 @@
     background-color: #F7F7F7;
 }
 
+.gray-back{
+    background-color: white;
+    height: 2rem;
+}
+
 .header{
     font-size: 2rem;    
 }
@@ -185,6 +190,7 @@
 .section{
     padding-top: 5rem;
     padding-bottom: 5rem;
+    margin-bottom: 0.5rem;
 }
 
 .text-section{
@@ -243,5 +249,12 @@
     .subhead{
         font-size: 1em;
         width: 50vw;
+    }
+    .main{
+        margin: 0em;
+    }
+
+    .gray-back{
+        background-color: #F7F7F7;
     }
 }

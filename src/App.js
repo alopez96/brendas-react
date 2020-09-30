@@ -75,7 +75,7 @@ function App() {
       </div>
 
       <JumpieSlider/>
-      <div className='text-center margin'>
+      <div className='text-center gray-back'>
         <button className='primary-cta'>View all rentals</button>
       </div>
 
