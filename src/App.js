@@ -84,8 +84,9 @@ function App() {
       </LazyLoad>
 
       <JumpieSlider/>
-      <button>View all</button>
-
+      <div className='text-center margin'>
+        <button className='cta-btn'>View all</button>
+      </div>
       <div ref={contactRef}> 
         <Contact isMobile={isMobile} isengl={isengl}/> 
       </div>

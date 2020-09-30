@@ -79,11 +79,15 @@
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
-    /* height: 100vh; */
+    height: 100vh;
     overflow-x: auto;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.margin{
+    margin-bottom: 5rem;
 }
 
 .slider-image{

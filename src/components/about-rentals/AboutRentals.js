@@ -1,6 +1,5 @@
 import React from 'react';
 import rental from './../../svg/rentals.svg';
-import './rentals.css';
 import tent from './../../svg/mobileSizes/rentals.svg';
 import tent2 from './../jumpies/images/tent.jpg';
 
@@ -21,34 +20,18 @@ function AboutRentals ({ isMobile, isengl, goToRef, contactRef }) {
         goToRef(contactRef)
     }
 
-    if(!isMobile){
-        return(
-            <div className='main'>
-                <div className='content'>
-                    <h3 className='head'>{header}</h3>
-                    <p className='subhead'>{subheader}</p>    
-                    <a className='primary' onClick={() => call()}>{secondary}</a>
-                </div>
-                <div>
-                    <img className='image' src={tent2} alt='tent'/>
-                </div>
+    return(
+        <div className='main'>
+            <div className='content'>
+                <h3 className='head'>{header}</h3>
+                <p className='subhead'>{subheader}</p>    
+                <a className='primary' onClick={() => call()}>{secondary}</a>
             </div>
-        );
-    }
-    else{
-        return(
-            <div className='mmain'>
-                <img className='mimage' src={tent} alt='tent'/>
-                <div className='mcontent'>
-                    <h3 className='mhead'>{header}</h3>
-                    <p className='msubhead'>{subheader}</p>   
-                    <a className='mprimary' onClick={() => call()}>{secondary}</a>
-                </div>
+            <div>
+                <img className='image' src={tent2} alt='tent'/>
             </div>
-        );
-    }
-
-    
+        </div>
+    );   
 }
 
 export default AboutRentals;
