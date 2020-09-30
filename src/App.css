@@ -146,6 +146,11 @@
     font-size: 2.4em;
 }
 
+.subhead{
+    font-size: 1.4em;
+    width: 40vw;
+}
+
 .image{
     width: 25vw;
 }
