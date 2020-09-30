@@ -13,7 +13,7 @@ function AboutRentals ({ isMobile, isengl, goToRef, contactRef }) {
     else{
         var header = 'Necesita mesas, sillas, o carpa?';
         var subheader = 'Usted nos dice cuantas y nosotros se las llevamos.';
-        var secondary = 'Contactar >';
+        var secondary = 'Contactar';
     }
     
     const call = () => {

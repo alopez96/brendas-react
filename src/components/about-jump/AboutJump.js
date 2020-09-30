@@ -9,7 +9,7 @@ function AboutJump ({ isMobile, updateRoute, isengl, goToRef, contactRef }) {
     if(isengl){
         var header = 'Give them a birthday party they will remember.';
         var subheader = 'Choose from a variety of jumpies, including Slides, Water Slides, and Castles with Spiderman, Hulk, Frozen, and more.';
-        var primary = 'See jumpies';
+        var primary = 'See rentals';
         var secondary = 'Contact us >';
     }
     else{
@@ -36,7 +36,7 @@ function AboutJump ({ isMobile, updateRoute, isengl, goToRef, contactRef }) {
             <div className='flex-container text-section'>
                 <h3 className='header'>{header}</h3>
                 <p className='subheader'>{subheader}</p>    
-                {/* <button className='primary-cta' onClick={() => seeJumpies()}>{primary}</button> */}
+                <button className='primary-cta' onClick={() => seeJumpies()}>{primary}</button>
             </div>  
         </div>
     );
