@@ -138,10 +138,8 @@
     align-items: center;
 }
 
-.content-text{
-    background-color: red;
-    color: red;
-    width: 10px;
+.content{
+    width: 50vw;
 }
 
 .head{
@@ -150,7 +148,44 @@
 }
 
 .image{
-    width: 30vw;
+    width: 25vw;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    background-color: #F7F7F7;
+}
+
+.header{
+    font-size: 2rem;    
+}
+
+.subheader{
+    font-size: 1.4rem;
+    color: rgb(85, 85, 85);
+}
+
+.primary-cta{
+    font-size: 1.5rem;
+    border-radius: 0.2rem;
+    background-color: #F172A1;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    color: white;
+    border: none;
+}
+
+.section{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.text-section{
+    background-color: transparent;
+    width: 40%;
 }
 
 /* ipads */
@@ -173,5 +208,35 @@
     
     .image{
         width: 40vw;
+    }
+
+    .flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        padding: 1.2rem;
+    }
+
+    .reverse{
+        flex-direction: column-reverse;
+    }
+    
+    .header{
+        font-size: 1.3rem;    
+    }
+    
+    .subheader{
+        font-size: 1rem;
+    }
+    
+    .primary-cta{
+        font-size: 1rem;
+        padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+    }
+
+    .text-section{
+        background-color: transparent;
+        width: 80%;
     }
 }

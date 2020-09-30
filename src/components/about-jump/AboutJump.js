@@ -1,13 +1,14 @@
 import React from 'react';
-import jumpie from './../../svg/jumpieblue.svg';
+// import jumpie from './../../svg/jumpieblue.svg';
 import jumpieMobile from './../../svg/mobileSizes/jumpieBlue.svg';
 import './about.css';
+import jumpie from './../jumpies/images/b9.jpeg';
 
 function AboutJump ({ isMobile, updateRoute, isengl, goToRef, contactRef }) {
 
     if(isengl){
         var header = 'Give them a birthday party they will remember.';
-        var subheader = 'Choose from a variety of jumpies, including Slides, Water Slides, and castles with Spiderman, Hulk, Frozen, and more.';
+        var subheader = 'Choose from a variety of jumpies, including Slides, Water Slides, and Castles with Spiderman, Hulk, Frozen, and more.';
         var primary = 'See jumpies >';
         var secondary = 'Contact us >';
     }
@@ -27,42 +28,18 @@ function AboutJump ({ isMobile, updateRoute, isengl, goToRef, contactRef }) {
         goToRef(contactRef)
     }
 
-
-    if(!isMobile){
-        return(
-            <div>
-                <div className="main">
-                    <div>
-                        <img className='image' src={jumpie} alt='jumpie'/>
-                    </div>
-                    <div className='content'>
-                        <h3 className='head'>{header}</h3>
-                        <p className='subhead'>{subheader}</p>
-                        <div className='buttons'>
-                            <a className='primary' onClick={() => seeJumpies()}>{primary}</a>
-                            <a className='secondary' onClick={() => call()}>{secondary}</a>
-                        </div>
-                    </div>
-
-                </div>
+    return(
+        <div className='flex section'>
+            <div className='flex-container'>
+                <img className='image' src={jumpie} alt='jumpie'/>
             </div>
-        );
-    }
-    else{
-        return(
-            <div className='mmain'>
-                <img className='mimage' src={jumpieMobile} alt='jumpie'/>
-                <div className='mcontent'>
-                    <h3 className='mhead'>{header}</h3>
-                    <p className='msubhead'>{subheader}</p>
-                    <div className='mbuttons'>
-                        <a className='mprimary' onClick={() => seeJumpies()}>{primary}</a>
-                        <a className='msecondary' onClick={() => call()}>{secondary}</a> 
-                    </div>
-                </div>
-            </div>
-        )
-    }
+            <div className='flex-container text-section'>
+                <h3 className='header'>{header}</h3>
+                <p className='subheader'>{subheader}</p>    
+                <button className='primary-cta' onClick={() => seeJumpies()}>{primary}</button>
+            </div>  
+        </div>
+    );
 }
 
 export default AboutJump;
