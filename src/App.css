@@ -144,7 +144,6 @@
 
 .head{
     font-size: 2.4em;
-    /* width: 4vw; */
 }
 
 .image{
@@ -196,16 +195,6 @@
 
 /* phones */
 @media only screen and (max-width: 480px) {
-    .head{
-        font-size: 2em;
-        width: 4vw;
-    }
-    
-    .subhead{
-        font-size: 1em;
-        width: 45vw;
-    }
-    
     .image{
         width: 40vw;
     }
@@ -238,5 +227,16 @@
     .text-section{
         background-color: transparent;
         width: 80%;
+    }
+
+    /* contact section */
+    .head{
+        font-size: 1.4em;
+        width: 100vw;
+    }
+
+    .subhead{
+        font-size: 1em;
+        width: 50vw;
     }
 }

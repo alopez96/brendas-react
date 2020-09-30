@@ -46,39 +46,19 @@ function Contact ({ isMobile, isengl }) {
         cta: 'secondary'
     }
 
-    if(!isMobile){
-        return(
-            <div className='main'>
-                <div className='content'>
-                    <p className='head'>{message}</p>
-                    <p className='subhead'>{subhead}</p>
-                    <div>
-                        <Icon data={callData}/>
-                        <Icon data={faceData}/>
-                        <Icon data={mailData}/>
-                    </div>
+    return(
+        <div className='main'>
+            <div className='content'>
+                <p className='head'>{message}</p>
+                <p className='subhead'>{subhead}</p>
+                <div>
+                    <Icon data={callData}/>
+                    <Icon data={faceData}/>
+                    <Icon data={mailData}/>
                 </div>
             </div>
-        )
-    }
-    else{
-        return(
-            <div className='mmain'>
-                <div className='mcontent'>
-                    <p className='mhead'>{message}</p>
-                        <ul className='msubhead'>
-                            <li style={{marginBottom:'1em'}}>{text1}</li>
-                            <li style={{marginBottom:'2em'}}>{text3}</li>
-                        </ul>
-                    <div>
-                        <Icon data={callData}/>
-                        <Icon data={faceData}/>
-                        <Icon data={mailData}/>
-                    </div>
-                </div>
-            </div>
-        )
-    }
+        </div>
+    )
 }
 
 export default Contact;

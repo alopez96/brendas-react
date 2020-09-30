@@ -1,14 +1,8 @@
-
-.subhead{
-    font-size: 1.2em;
-    margin-top: -0.5em;
-    margin-bottom: 2em;
-}
-
 /* Icon.js */
 .contain{
     align-items: center;
     display: flex;
+    flex-direction: row;
 }
 
 .data-text{
