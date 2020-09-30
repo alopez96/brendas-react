@@ -15,7 +15,7 @@ import LazyLoad from 'react-lazyload';
 function App() {
 
   const [width, setWidth] = useState(window.innerWidth);
-  const [isMobile, setisMobile] = useState(window.innerWidth < 500);
+  const [isMobile, setisMobile] = useState(window.innerWidth < 480);
   const [route, setRoute] = useState('home');
 
   //state for language selected

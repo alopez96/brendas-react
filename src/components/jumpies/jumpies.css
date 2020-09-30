@@ -174,9 +174,10 @@
     }
     
     .slider-image{
-        width: 100vw;
+        width: 100%;
         object-fit: cover;
         height: 70vh;
-        margin: 5px;
+        padding: 0px;
+        margin: 0px;
     }
 }
