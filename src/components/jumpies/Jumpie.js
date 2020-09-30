@@ -6,10 +6,9 @@ function Jumpie ( { pic, title }){
     return(
         <div className='jump-card'>            
             <img className='picture hover' src={pic} alt={title}/>
-            <div id='card-label'>
-                <label>{title}</label>
-            </div>    
-        </div>)
+                <label id='card-label'>{title}</label>
+        </div>
+        )
 }
 
 export default Jumpie;
