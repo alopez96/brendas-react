@@ -74,6 +74,11 @@ function App() {
         <Hero isMobile={isMobile} updateRoute={updateRoute} isengl={isengl}/> 
       </div>
 
+      <JumpieSlider/>
+      <div className='text-center margin'>
+        <button className='primary-cta'>View all rentals</button>
+      </div>
+
       <LazyLoad placeholder={<div>Loading...</div>}>
       <div ref={aboutRef}> 
         <AboutJump isMobile={isMobile} updateRoute={updateRoute} isengl={isengl}
@@ -83,10 +88,6 @@ function App() {
       </div>
       </LazyLoad>
 
-      <JumpieSlider/>
-      <div className='text-center margin'>
-        <button className='primary-cta'>View all</button>
-      </div>
       <div ref={contactRef}> 
         <Contact isMobile={isMobile} isengl={isengl}/> 
       </div>
