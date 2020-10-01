@@ -23,8 +23,10 @@ import minions from './images/minions.JPG';
 import hulk from './images/hulk.JPG';
 import kitty from './images/helloKitty.JPG';
 import spider from './images/spiderman.JPG';
+import coco from './images/coco.jpg';
 
 import bigSlide from './images/big_slide.jpg';
+import castleSlide from './images/castleSlide.jpg';
 
 import LazyLoad from 'react-lazyload';
 
@@ -38,11 +40,13 @@ function Jumpies({ updateRoute, isMobile }) {
         { name: 'Castle Water Slide', image: img4 },
         { name: 'Castle Slide', image: img9 },
         { name: 'Princess Castle Slide', image: img8 },
-
-        { name: 'Tent', image: tent },
+        { name: 'Pink Castle Slide', image: castleSlide },
 
         { name: 'Water Slide', image: bigSlide },
 
+        { name: 'Tent', image: tent },
+
+        { name: 'Coco', image: coco },
         { name: 'Pony', image: img1, },
         { name: 'Moana', image: img3 },
         { name: 'Batman', image: img5 },

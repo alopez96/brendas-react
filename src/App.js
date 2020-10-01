@@ -91,9 +91,11 @@ function App() {
       </div>
 
       <Footer/>
-
+    
       </div>
-      : <Jumpies updateRoute={updateRoute} isMobile={isMobile}/> }
+      : <LazyLoad placeholder={<div>Loading...</div>}>
+          <Jumpies updateRoute={updateRoute} isMobile={isMobile}/>
+        </LazyLoad> }
     </div>
   );
 }
