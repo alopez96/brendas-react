@@ -35,11 +35,10 @@ function Nav ({ goToRef, homeRef, aboutRef, contactRef, isMobile, isengl, setisE
   const updatePosition = () => setyindex(window.pageYOffset);
 
   if(!isMobile){
-    if(yindex < 100){
+    if(yindex < 50){
       return (
         <div>  
             <ul style={listStyle} className='nav-list'>
-                <li onClick={()=>goToRef(homeRef)} style={listItem}>Home</li>
                 <li onClick={()=>goToRef(aboutRef)} style={listItem}>Rentals</li>
                 <li onClick={()=>goToRef(contactRef)} style={listItem}>Contact</li>
                 <li style={listItem}> 
@@ -50,14 +49,8 @@ function Nav ({ goToRef, homeRef, aboutRef, contactRef, isMobile, isengl, setisE
     }
     else{
         return(
-          <ul style={listStyle2} className='nav-list'>
-              <li onClick={()=>goToRef(homeRef)} style={listItem2}>Home</li>
-              <li onClick={()=>goToRef(aboutRef)} style={listItem2}>Rentals</li>
-                <li onClick={()=>goToRef(contactRef)} style={listItem2}>Contact</li>
-              <li style={listItem2}> 
-                <LangButton isMobile={false} isengl={isengl} setisEngl={setisEngl} lang={lang} toggleLang={toggleLang}/>
-            </li>
-          </ul>)
+          <div></div>
+          )
     }}
     else{
       return(
