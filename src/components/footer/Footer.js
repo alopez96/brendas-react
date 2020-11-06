@@ -20,9 +20,18 @@ function Footer () {
                    <div> <FooterIcon icon={mail} link={emailLink}/> </div>
                    <div> <FooterIcon icon={call} link={callLink}/> </div>
                 </div>
+                <p style={arturoText}>Website Developed by 
+                    <a href='https://arturocreates.com' className="arturo-link"
+                    target="_blank"> Arturo Lopez</a>
+                    </p>
             </div>
         </div>
     )
 }
+
+const arturoText = {
+    fontSize: "17px",
+    textAlign: "center"
+};
 
 export default Footer;
