@@ -10,7 +10,7 @@ function Contact ({ isMobile, isengl }) {
 
     if(isengl){
         var message = 'Call for a free quote.';
-        var subhead = 'We a family owned business located in Santa Rosa, CA. We can deliver free of charge within the area. Ask for Anabel or Isidro.';
+        var subhead = 'We are a family owned business located in Santa Rosa, CA. We can deliver free of charge within the area. Ask for Anabel or Isidro.';
         var text1 = 'We can deliver and pick up free of charge within the surrounding area of Santa Rosa, CA.';
         var text3 = 'When contacting us, ask for Anabel or Isidro.';
     }
