@@ -16,7 +16,6 @@ function JumpieSlider({ updateRoute }) {
   
     return (
     <div className='slider gray'>
-      <div className=''>
         <img className='slider-image' src={img1} alt={'title'}/>
         <img className='slider-image' src={img2} alt={'title'}/>
         <img className='slider-image' src={img3} alt={'title'}/>
@@ -27,7 +26,6 @@ function JumpieSlider({ updateRoute }) {
         <div className='text-center '>
         <button className='primary-cta' onClick={() => updateRoute('jumpies')} >View all rentals</button>
         </div>
-      </div>
     </div>
       )
   }

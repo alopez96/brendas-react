@@ -6,8 +6,8 @@ import tent2 from './../jumpies/images/tent.jpg';
 function AboutRentals ({ isMobile, isengl, goToRef, contactRef }) {
 
     if(isengl){
-        var header = 'Rent tents, tables, and chairs.';
-        var subheader = 'We have what you need to seat a large group, and we can deliver to parks or homes.';
+        var header = 'Need a tent and tables to host your guests?';
+        var subheader = 'We rent tents, chairs and tables so that you can seat a large group.';
         var secondary = 'Contact us';
     }
     else{

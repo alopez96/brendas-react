@@ -7,8 +7,8 @@ import jumpie from './../jumpies/images/b9.jpeg';
 function AboutJump ({ isMobile, updateRoute, isengl, goToRef, contactRef }) {
 
     if(isengl){
-        var header = 'Give them the birthday party they will remember.';
-        var subheader = 'Choose from a variety of jumpies, including Slides, Water Slides, and Castles with Spiderman, Hulk, Frozen, and more.';
+        var header = 'We are here for your party rental needs.';
+        var subheader = 'Choose from a variety of jumpies, including slides, Water slides, castles with Spiderman, Hulk, Frozen, and more.';
         var primary = 'See rentals';
         var secondary = 'Contact us >';
     }
