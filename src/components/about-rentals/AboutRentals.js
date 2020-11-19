@@ -22,14 +22,12 @@ function AboutRentals ({ isMobile, isengl, goToRef, contactRef }) {
 
     return(
         <div className='flex section reverse'>
-            <div className='flex-container text-section'>
+            <div className='text-section'>
                 <h3 className='header'>{header}</h3>
                 <p className='subheader'>{subheader}</p>    
                 <button className='primary-cta' onClick={() => call()}>{secondary}</button>
             </div>
-            <div className='flex-container'>
-                <img className='slider-image' src={tent2} alt='tent'/>
-            </div>
+            <img className='image' src={tent2} alt='tent'/>
         </div>
     );   
 }
