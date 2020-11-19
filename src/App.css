@@ -230,22 +230,16 @@
 
     /* contact section */
     .head{
-        font-size: 1.4em;
+        font-size: 2em;
     }
 
     .subhead{
         font-size: 1em;
-        width: 50vw;
     }
     
     .main{
-        display: flex;
-        flex-direction: row;
-        height: auto;
-        margin: 1.2em;
-        padding: 5rem 0 5rem 0;
-        justify-content: center;
-        align-items: center;
+        height: 100vh;
+        width: 70vw;
     }
 }
 
