@@ -8,7 +8,7 @@ import AboutRentals from './components/about-rentals/AboutRentals';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import Jumpies from './components/jumpies/Jumpies';
-import JumpieSlider from './components/jumpies/JumpieSlider';
+import JumpieSliderPreview from './components/jumpies/JumpieSlider';
 
 import LazyLoad from 'react-lazyload';
 
@@ -76,15 +76,18 @@ function App() {
       </div>
 
       <LazyLoad placeholder={<div>Loading...</div>}>
-      <div ref={aboutRef}> 
-        <AboutJump isMobile={isMobile} updateRoute={updateRoute} isengl={isengl}
-            goToRef={goToRef} contactRef={contactRef} /> 
-        <AboutRentals isMobile={isMobile} isengl={isengl}
-            goToRef={goToRef} contactRef={contactRef} /> 
-      </div>
-      </LazyLoad>
+        <div> 
+          <AboutJump isMobile={isMobile} updateRoute={updateRoute} isengl={isengl}
+              goToRef={goToRef} contactRef={contactRef} /> 
 
-      <JumpieSlider updateRoute={updateRoute}/>
+        <div ref={aboutRef}>
+          <JumpieSliderPreview updateRoute={updateRoute}/>
+        </div>
+        
+        <AboutRentals isMobile={isMobile} isengl={isengl}
+              goToRef={goToRef} contactRef={contactRef} /> 
+        </div>
+      </LazyLoad>
 
       <div ref={contactRef}> 
         <Contact isMobile={isMobile} isengl={isengl}/> 
