@@ -7,7 +7,7 @@ function AboutRentals ({ isMobile, isengl, goToRef, contactRef }) {
 
     if(isengl){
         var header = 'Need a tent and tables to host your guests?';
-        var subheader = 'We rent tents, chairs and tables so that you can seat a large group.';
+        var subheader = 'We rent tents, chairs, and tables so that you can seat a large group.';
         var secondary = 'Contact us';
     }
     else{

@@ -21,7 +21,6 @@ function MobileNav({ goToRef, homeRef, aboutRef, contactRef, isengl, setisEngl, 
                 <div className='mobile-nav'>
                     <ul>
                         <li onClick={()=>navigate(homeRef)}>Home</li>
-                        <li onClick={()=>navigate(aboutRef)}>About</li>
                         <li onClick={()=>navigate(contactRef)}>Contact</li>
                         <LangButton isMobile={true} isengl={isengl} setisEngl={setisEngl} 
                                 lang={lang} toggleLang={toggleLang} setisNavOpen={setisNavOpen} />

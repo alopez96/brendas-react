@@ -39,7 +39,6 @@ function Nav ({ goToRef, homeRef, aboutRef, contactRef, isMobile, isengl, setisE
       return (
         <div>  
             <ul style={listStyle} className='nav-list'>
-                <li onClick={()=>goToRef(aboutRef)} style={listItem}>Rentals</li>
                 <li onClick={()=>goToRef(contactRef)} style={listItem}>Contact</li>
                 <li style={listItem}> 
                   <LangButton isMobile={false} isengl={isengl} setisEngl={setisEngl} lang={lang} toggleLang={toggleLang} />

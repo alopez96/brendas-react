@@ -8,7 +8,7 @@ function Hero({ isMobile, updateRoute, isengl }) {
 
   if(isengl){
     var header = 'Host an Event to Remember.';
-    var subHeader = 'We rent out jumpers, tables, chairs, and tents for all ocasions.';
+    var subHeader = 'We rent out jumpies, tables, chairs, and tents for all ocasions.';
   }
   else{
     var header = 'Brenda\'s Jumpies';

@@ -5,7 +5,7 @@ function AboutJump ({ isMobile, updateRoute, isengl, goToRef, contactRef }) {
 
     if(isengl){
         var header = 'We are here for your party rental needs.';
-        var subheader = 'Choose from a variety of jumpies, including slides, Water slides, castles with Spiderman, Hulk, Frozen, and more.';
+        var subheader = 'Choose from a variety of jumpies, including slides, water slides, castles with Spiderman, Hulk, Frozen, and more.';
         var primary = 'See rentals';
         var secondary = 'Contact us >';
     }

@@ -10,8 +10,6 @@ function Contact ({ isMobile, isengl }) {
     if(isengl){
         var message = 'Call for a free quote.';
         var subhead = 'We are a family owned business located in Santa Rosa, CA. We can deliver free of charge within the area. Ask for Anabel or Isidro.';
-        var text1 = 'We can deliver and pick up free of charge within the surrounding area of Santa Rosa, CA.';
-        var text3 = 'When contacting us, ask for Anabel or Isidro.';
     }
     else{
         var message = 'Llamenos para un estimado gratis.';
@@ -47,14 +45,18 @@ function Contact ({ isMobile, isengl }) {
 
     return(
         <div className='main'>
-            <div className='content'>
-                <p className='head'>{message}</p>
-                <p className='subhead'>{subhead}</p>
-                <div>
-                    <Icon data={callData}/>
-                    <Icon data={faceData}/>
-                    <Icon data={mailData}/>
-                </div>
+            <p className='head text-center'>
+                {message}
+            </p>
+            <p className='subhead text-center'>
+                {subhead}
+                <br></br>
+                Se habla {'Espa\u00f1ol'}.
+            </p>
+            <div>
+                <Icon data={callData}/>
+                <Icon data={faceData}/>
+                <Icon data={mailData}/>
             </div>
         </div>
     )
