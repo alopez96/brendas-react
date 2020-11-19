@@ -1,5 +1,4 @@
 import React from 'react';
-import './jumpies.css';
 
 function Jumpie ( { pic, title }){
 

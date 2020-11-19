@@ -1,7 +1,4 @@
 import React from 'react';
-// import jumpie from './../../svg/jumpieblue.svg';
-import jumpieMobile from './../../svg/mobileSizes/jumpieBlue.svg';
-import './about.css';
 import jumpie from './../jumpies/images/b9.jpeg';
 
 function AboutJump ({ isMobile, updateRoute, isengl, goToRef, contactRef }) {
@@ -29,11 +26,9 @@ function AboutJump ({ isMobile, updateRoute, isengl, goToRef, contactRef }) {
     }
 
     return(
-        <div className='flex'>
-            <div className='flex-container'>
-                <img className='slider-image' src={jumpie} alt='jumpie'/>
-            </div>
-            <div className='flex-container text-section'>
+        <div className='section flex'>
+            <img className='slider-image' src={jumpie} alt='jumpie'/>
+            <div className='text-section'>
                 <h3 className='header'>{header}</h3>
                 <p className='subheader'>{subheader}</p>    
                 <button className='primary-cta' onClick={() => seeJumpies()}>{primary}</button>

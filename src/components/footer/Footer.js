@@ -1,5 +1,4 @@
 import React from 'react';
-import './footer.css';
 import FooterIcon from './FooterIcon';
 import fb from './icons/facebook.svg';
 import mail from './icons/mail.svg';

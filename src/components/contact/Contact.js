@@ -1,5 +1,4 @@
 import React from 'react';
-import './main.css';
 import calling from './icons/call.svg';
 import face from './icons/facebook.svg';
 import mail from './icons/mail.svg';

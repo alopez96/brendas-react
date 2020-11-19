@@ -154,15 +154,9 @@
 .flex{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 2rem;
     background-color: #F7F7F7;
-}
-
-.gray-back{
-    background-color: white;
-    height: 2rem;
 }
 
 .header{
@@ -184,14 +178,13 @@
 }
 
 .section{
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    margin-bottom: 0.5rem;
+    width: 100vw;
+    height: 100vh;
 }
 
 .text-section{
     background-color: transparent;
-    width: 40%;
+    width: 500px;
 }
 
 .padding{
@@ -215,7 +208,6 @@
         flex-direction: column;
         justify-content: space-around;
         text-align: center;
-        padding: 1.2rem;
     }
 
     .reverse{
@@ -263,5 +255,376 @@
 
     .gray-back{
         background-color: #F7F7F7;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    max-width: 30vw;
+    margin-top: 2em;
+}
+
+.primary{
+    align-self: flex-end;
+    color: #F172A1;
+    font-weight: 600;
+    font-size: 1.4em;
+    background-color: transparent;
+    border: none;
+    transition: all .2s ease-in-out;
+}
+
+.primary:hover{
+    cursor: pointer;
+    transform: scale(1.09);
+}
+
+.secondary{
+    color: #505050;
+    font-weight: 600;
+    font-size: 1.4em;
+    background-color: transparent;
+    border: none;
+    transition: all .2s ease-in-out;
+}
+
+.secondary:hover{
+    cursor: pointer;
+    transform: scale(1.09);
+}
+
+.msecondary{
+    color: #505050;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+
+
+
+
+
+
+
+
+/* Icon.js */
+.contain{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.data-text{
+    color: #505050;
+    text-decoration: none;
+    font-size: 1.6em;
+    margin-left: 2em;
+}
+
+/* ipads */
+@media only screen and (max-width: 767px) {
+    .data-text {
+        font-size: 0.5em;
+        text-align: center;
+        margin: 0px;
+    }
+}
+
+/* phones */
+@media only screen and (max-width: 480px) {
+    .data-text {
+      font-size: 1em;
+      text-align: center;
+      margin-left: 0.5em;
+    }
+}
+
+
+
+
+
+
+
+.footer{
+    background-color: #505050;
+    padding: 3em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer p{
+    color: white;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.footer-list{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-list div{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all .2s ease-in-out;
+}
+
+.footer-list div:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+.arturo-link{
+    color:#f39cbc;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.background{
+    background-color: #DADADA;
+    min-height: 100vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+}
+
+.jump-list{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.jump-card{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 50vh;
+    align-items: center;
+    margin: 5px;
+}
+
+.picture{
+    width: 20vw;
+    height: 50vh;
+    object-fit: cover;
+}
+
+#card-label {
+    position:relative;
+    bottom:30px;
+    left:0px;
+    visibility:hidden;
+    opacity: 1;
+    background-color: #DADADA;
+    width: 20vw;
+    height: 2rem;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+    
+.jump-card:hover #card-label {
+    visibility:visible;
+}
+
+.search-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.search-container label{
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #3b3a3a;
+}
+
+.search-box{
+    width: 13vw;
+    padding: 1em;
+    height: 1.5rem;
+    border: none;
+    border-radius: 0.15rem;
+    font-size: 1.2rem;
+}
+
+.jump-top{
+    display: flex;
+    justify-content: center;
+    width: 70vw;
+}
+
+.slider{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    background-color: #f7f7f7;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.gray{
+    background-color: #f0f0f0;
+    padding: 5rem 0;
+}
+
+.margin{
+    margin-bottom: 5rem;
+}
+
+.slider-image{
+    width: 30vw;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.position-relative{
+    position:relative;
+}
+
+.slider-btn{
+    position: relative;
+    background-color: red;
+    font-size: 1.2rem;
+    border-radius: 0.2rem;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    color: white;
+    border: solid;
+    border-width: 2px;
+}
+
+.secondary-cta{
+    font-size: 1.2rem;
+    border-radius: 0.2rem;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    color: white;
+    border: solid;
+    background-color:transparent;
+    border-width: 2px;
+}
+
+/* mobile */
+/* ----------- phones ----------- */
+@media only screen and (max-width: 480px) {
+    .background{
+        background-color: #DADADA;
+        min-height: 100vh;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 4rem 0rem 0rem 0rem;
+    }
+
+    .search-container{
+        margin-top: .2rem;
+        margin-bottom: 0rem;
+    }
+
+    .search-container label{
+        font-size: 1.2rem;
+    }
+    
+    .search-box{
+        width: 50vw;
+        height: 1.5rem;
+        border: none;
+        border-radius: 0.15rem;
+        font-size: 1.2rem;
+    }
+
+    .jump-list{
+        display: flex;
+        flex-flow: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .jump-card{
+        width: auto;
+        height: auto;
+        margin: 5px;
+        position:relative;
+        text-align: center;
+    }
+    
+    .picture{
+        width: 70%;
+        height: auto;
+        object-fit: cover;
+    }      
+    
+    #card-label {
+        position: absolute;
+        opacity: 0.7;
+        background-color: white;
+        color: black;
+        text-align: center;
+        visibility:visible;
+        
+        font-size: 1.2rem;
+        height: auto;
+        width: auto;
+        bottom: 0px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+    } 
+
+    .slider{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #F7F7F7;
+    }
+    
+    .margin{
+        margin-bottom: 5rem;
+    }
+    
+    .slider-image{
+        width: 80%;
+        object-fit: cover;
+        height: 50%;
+        padding: 0px;
+        margin: 10px 0;
+    }
+
+    .secondary-cta{
+        font-size: 1rem;
     }
 }
