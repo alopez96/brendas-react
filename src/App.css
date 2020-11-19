@@ -151,10 +151,6 @@
     width: 40vw;
 }
 
-.image{
-    width: 25vw;
-}
-
 .flex{
     display: flex;
     flex-direction: row;
@@ -196,6 +192,10 @@
 .text-section{
     background-color: transparent;
     width: 40%;
+}
+
+.padding{
+    padding: 50px 0 10px 0;
 }
 
 /* ipads */

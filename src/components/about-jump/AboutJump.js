@@ -31,7 +31,7 @@ function AboutJump ({ isMobile, updateRoute, isengl, goToRef, contactRef }) {
     return(
         <div className='flex'>
             <div className='flex-container'>
-                <img className='image' src={jumpie} alt='jumpie'/>
+                <img className='slider-image' src={jumpie} alt='jumpie'/>
             </div>
             <div className='flex-container text-section'>
                 <h3 className='header'>{header}</h3>

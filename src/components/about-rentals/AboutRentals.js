@@ -28,7 +28,7 @@ function AboutRentals ({ isMobile, isengl, goToRef, contactRef }) {
                 <button className='primary-cta' onClick={() => call()}>{secondary}</button>
             </div>
             <div className='flex-container'>
-                <img className='image' src={tent2} alt='tent'/>
+                <img className='slider-image' src={tent2} alt='tent'/>
             </div>
         </div>
     );   
