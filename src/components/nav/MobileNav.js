@@ -3,7 +3,7 @@ import './../nav/nav.css';
 import burgerGray from './../../svg/mobileSizes/burger_gray.svg';
 import LangButton from './LangButton';
 
-function MobileNav({ goToRef, homeRef, aboutRef, contactRef, isengl, setisEngl, lang, toggleLang }) {
+function MobileNav({ goToRef, homeRef, aboutRef, contactRef, isengl, setisEngl, lang, toggleLang, updateRoute }) {
 
     const [isNavOpen, setisNavOpen] = useState(false);
 
@@ -14,6 +14,11 @@ function MobileNav({ goToRef, homeRef, aboutRef, contactRef, isengl, setisEngl, 
         goToRef(route)
     }
 
+    const gotoGallery = () => {
+        setisNavOpen(false)
+        updateRoute('list')
+    }
+
     return(
         <div>
             {isNavOpen?
@@ -21,6 +26,7 @@ function MobileNav({ goToRef, homeRef, aboutRef, contactRef, isengl, setisEngl, 
                 <div className='mobile-nav'>
                     <ul>
                         <li onClick={()=>navigate(homeRef)}>Home</li>
+                        <li onClick={() => gotoGallery()}>Gallery</li>
                         <li onClick={()=>navigate(contactRef)}>Contact</li>
                         <LangButton isMobile={true} isengl={isengl} setisEngl={setisEngl} 
                                 lang={lang} toggleLang={toggleLang} setisNavOpen={setisNavOpen} />

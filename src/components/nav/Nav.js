@@ -3,7 +3,7 @@ import LangButton from './LangButton';
 import MobileNav from './MobileNav';
 import './nav.css';
 
-function Nav ({ goToRef, homeRef, aboutRef, contactRef, isMobile, isengl, setisEngl }) {
+function Nav ({ goToRef, homeRef, aboutRef, contactRef, isMobile, isengl, setisEngl, updateRoute }) {
 
   const [lang, setLang] = useState('Espa\u00f1ol');
 
@@ -39,8 +39,9 @@ function Nav ({ goToRef, homeRef, aboutRef, contactRef, isMobile, isengl, setisE
       return (
         <div>  
             <ul style={listStyle} className='nav-list'>
+            <li onClick={() => updateRoute('list')} style={listItem}>Gallery</li>
                 <li onClick={()=>goToRef(contactRef)} style={listItem}>Contact</li>
-                <li style={listItem}> 
+                <li style={listItem}>
                   <LangButton isMobile={false} isengl={isengl} setisEngl={setisEngl} lang={lang} toggleLang={toggleLang} />
               </li>
             </ul>
@@ -55,7 +56,7 @@ function Nav ({ goToRef, homeRef, aboutRef, contactRef, isMobile, isengl, setisE
       return(
         <MobileNav goToRef={goToRef} homeRef={homeRef} 
                 aboutRef={aboutRef} contactRef={contactRef} isengl={isengl} 
-                setisEngl={setisEngl} lang={lang} toggleLang={toggleLang}/>
+                setisEngl={setisEngl} lang={lang} toggleLang={toggleLang} updateRoute={updateRoute}/>
       )
     }
 }

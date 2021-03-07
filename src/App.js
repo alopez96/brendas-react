@@ -69,7 +69,7 @@ function App() {
       <div>
 
         <Nav goToRef={goToRef} homeRef={homeRef} isMobile={isMobile} aboutRef={aboutRef}
-           contactRef={contactRef} isengl={isengl} setisEngl={setisEngl} />
+           contactRef={contactRef} isengl={isengl} setisEngl={setisEngl} updateRoute={updateRoute} />
 
       <div ref={homeRef}>
         <Hero isMobile={isMobile} updateRoute={updateRoute} isengl={isengl}/> 
