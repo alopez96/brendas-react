@@ -38,6 +38,7 @@ function Nav ({ goToRef, homeRef, aboutRef, contactRef, isMobile, isengl, setisE
     if(yindex < 50){
       return (
         <div>  
+          <p style={bizName}>Brendas Jumpies</p>
             <ul style={listStyle} className='nav-list'>
             <li onClick={() => updateRoute('list')} style={listItem}>Gallery</li>
                 <li onClick={()=>goToRef(contactRef)} style={listItem}>Contact</li>
@@ -60,6 +61,17 @@ function Nav ({ goToRef, homeRef, aboutRef, contactRef, isMobile, isengl, setisE
       )
     }
 }
+
+
+const bizName = {
+  display: 'inline',
+  position: 'fixed',
+  top: '1rem',
+  left: '3rem',
+  color: 'white',
+  fontSize: 20,
+  fontWeight: 'bold'
+};
 
 const listStyle = {
     display: 'inline',

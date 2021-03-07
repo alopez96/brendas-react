@@ -1,6 +1,4 @@
 import React from 'react';
-import rental from './../../svg/rentals.svg';
-import tent from './../../svg/mobileSizes/rentals.svg';
 import tent2 from './../jumpies/images/tent.jpg';
 
 function AboutRentals ({ isMobile, isengl, goToRef, contactRef }) {
